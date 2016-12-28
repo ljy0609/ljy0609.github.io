@@ -1,0 +1,100 @@
+@import "pc_base";
+@import "lnb";
+body{height:auto;}
+#wrap{width:960px;height:1470px;margin:0 auto;opacity:0.8;}
+
+// important ! -----------------------------------------------------------
+
+#lnb>dl>dt:nth-of-type(1){background-color:#006869;color:#fff;}
+#lnb{height:1400px}
+
+
+// content ---------------------------------------------------------------
+
+
+#content{width:670px;height:1400px;background-color:#fff;float:left;padding-top:70px;padding-left:44px;padding-right:36px;@include b-all(2px);border-left:0}
+/* .content_title{height:} */
+.content_title{width:100%;height:30px;}
+.content_title>h2{@include font330(29px);float:left}
+.content_title>span{@include font330(14px);float:right;padding-top:12px;}
+
+
+//  login_form --------------------------------------------------------------
+
+form{width:100%;height:260px;/* background-color:#efefef; */margin-top:60px;}
+
+form>fieldset{width:50%;height:260px;@include b-set(2px);float:left;}
+form>fieldset:nth-of-type(1){border-right:1px solid $b_font;}
+form>fieldset:nth-of-type(2){background-color:#efefef;padding-top:30px;padding-left:26px;}
+
+form>fieldset>h2{@include noto(20px);padding-top:30px;padding-left:34px;position:relative}
+
+form>fieldset>h2::after{@include after();width:75%;height:1px;background-color:$b_font;margin-top:20px;}
+form>fieldset>h2::before{@include after();width:75%;height:1px;background-color:$b_font;margin-top:42px;}
+
+
+// loginBox_01
+
+fieldset>div.loginBox_01{width:100%;height:126px;padding-top:44px;padding-left:26px;position:relative;}
+
+	.loginBox_01::after{@include after();width:80%;height:1px;background-color:#006869;left:12%;bottom:0}
+
+	
+	.loginBox_01>ul{height:104px;float:left;}
+	.loginBox_01>ul:nth-of-type(1){width:88px;}
+	.loginBox_01>ul:nth-of-type(1)>label{@include noto(16px);float:left;}
+	.loginBox_01>ul:nth-of-type(1)>label:nth-of-type(2){magin-top:2px;}
+	.loginBox_01>ul:nth-of-type(2){width:122px;}
+	.loginBox_01>ul:nth-of-type(2)>input{width:122px;border-radius:2px;background-color:#ecf7f6;margin-top:2px;}
+	.loginbBox_01>ul:nth-of-type(2)>input:nth-of-type(2){margin-top:2px;}
+	.loginBox_01 button{width:52px;height:42px;background-color:$blc;margin-left:10px;@include noto(14px);color:#fff;}
+
+// loginBox_02
+
+
+fieldset>div.loginBox_02{width:100%;height:auto;background-color:#a0d;padding-left:40px;}
+.loginBox_02 button{width:120px;height:32px;float:left;color:#fff;background-color:#4c4d4f;@include noto(14px);transition:all 0.5s;}
+.loginBox_02 button:hover,.fieldset_02 a:hover{background-color:transparent;color:$b_font;border: solid 1px $b_font;}
+.loginBox_02 button:nth-of-type(2){margin-left:20px;}
+
+
+// fieldset_02 ------------------------------
+
+.fieldset_02>ul>li>span{@include noto(20px);}
+.fieldset_02>ul>li{width:100%;height:50%;}
+.fieldset_02>ul>li>div>p{@include noto(14px);padding-top:16px;}
+.fieldset_02 a{display:block;width:160px;height:22px;background-color:$blc;color:#fff;text-align:center;@include noto(14px);margin:0 auto;margin-top:8px;transition:all 0.3s;margin-bottom:6px;}
+
+.fieldset_02 li:nth-of-type(1) a{width:100px;}
+
+// fieldset_manual (content >ul)
+
+.fieldset_manual{@include noto(14px,400);width:auto;height:auto;;margin-top:20px;padding-left:10px;}
+.fieldset_manual>li{line-height:1.5}
+
+// serviceBox (content>div.service)
+
+.serviceBox{@include b-set(2px);width:100%;height:450px;margin-top:100px;background-color:#dfdfdf;}
+.serviceBox>div{float:left;}
+/* .serviceBox>div.service_title{} */
+.service_title{float:left;width:100%;height:120px;background-color:#efefef;border-bottom:1px solid $bc}
+.service_title>h2,.service_title>h3{text-align:center;}
+.service_title>h2{@include noto(20px);padding:24px 100px 0px;}
+.service_title>h3{@include noto(16px);padding-top:10px;}
+
+.my_chart{width:100%;height:350px;background-color:#fff;padding-top:26px;}
+
+
+.my_chart_title{width:100%;height:auto;padding-left:20px;}
+.my_chart_title>h3,.my_chart_title>h2,.my_chart_title>img{float:left;margin-left:20px;}
+.my_chart_title>img{width:60px;height:60px;}
+.my_chart_title>h3,.my_chart_title>h2{width:80%;}
+.my_chart_title>h3{@include nanum(16px);padding-top:10px;}
+
+.my_chart_detail{width:100%;height:200px;background-color:#efefef;float:left;margin-top:40px;padding-left:24px;padding-top:34px;}
+
+.my_chart_detail>ul>li{width:20%;height:100%;float:left;padding-top:20px}
+.my_chart_detail>ul>li>a{width:100%;height:100%;float:left;@include noto(16px,500);padding-bottom:16px;}
+
+.serviceBox>p{float:right;position:relative;margin-top:10px;@include nanum(15px)}
+.serviceBox>p::after{@include after();width:680px;height:2px;background-color:$bc;left:-270px;bottom:0;margin-bottom:-40px;}

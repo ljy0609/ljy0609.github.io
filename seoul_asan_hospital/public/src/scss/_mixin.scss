@@ -1,0 +1,154 @@
+//_mixin.scss
+@import "_color";
+
+//define class
+
+//@expend @contend @for @if @for-each @switch
+
+//#{} <<<<<<<<
+$mob:360;
+$tab:640;
+$pc:960;
+
+@function mobile($width, $viewWidth:$mob){
+	@return ($width / $viewWidth)*100vw;
+}@function tab($width, $viewWidth:$tab){
+	@return ($width / $viewWidth)*100vw;
+}@function mobile($width, $viewWidth:$pc){
+	@return ($width / $viewWidth)*100vw;
+}
+
+// font
+
+//font weight:100~900 /ultrathin thin normal bold boolder light / normal : 400 bold :600 //
+
+@mixin noto($i:16px,$j:normal){font-family: 'Noto Sans KR', sans-serif; font-size:$i; font-weight:$j;}
+@mixin nanum($i:16px,$j:normal){font-family: 'Nanum Gothic', sans-serif; font-size:$i; font-weight:$j;}
+
+
+// border line
+
+@mixin b-set($size:2px,$borderColor:$bc)
+		{
+			border:{top:$size solid $borderColor;bottom:$size solid $borderColor;}
+		}
+@mixin b-all($size:2px,$borderColor:$bc)
+		{
+			border:{top:$size solid $borderColor;left:$size solid $borderColor;right:$size solid $borderColor;bottom:$size solid $borderColor;}
+		}
+
+
+//vender prefix
+
+@mixin rounded($i){
+	-webkit-border-radius:$i;
+	-moz-border-radius:$i;
+	-o-border-radius:$i;
+	border-radius:$i;
+}
+
+@mixin shadow($x,$y,$blur,$color){
+	-webkit-box-shadow:$x $y $blur $color;
+		-moz-box-shadow:$x $y $blur $color;
+		-o-box-shadow:$x $y $blur $color;
+			box-shadow:$x $y $blur $color;
+}
+
+@mixin trans($property:all,$duration:0.5s,$time:ease,$delay:0s){
+	-webkit-transition:$property $duration $time $delay;-moz-transition:$property $duration $time $delay;
+		-o-transition:$property $duration $time $delay;transition:$property $duration $time $delay;
+}
+
+@mixin box-sizing{
+	-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-o-box-sizing:border-box;
+			box-sizing:border-box;
+}
+
+@mixin wcalc($i, $j, $k){
+	-webkit-width:calc($i - $k);
+	-moz-width:calc($i - $k);
+	-o-width:calc($i - $k);
+	   width:calc($i - $k);
+}
+@mixin hcalc($i){
+	-webkit-height:calc($i);
+	-moz-height:calc($i);
+	-o-height:calc($i);
+	  height:calc($i);
+}
+
+@mixin opacity($i:1){
+	-webkit-opacity:$i;
+	-moz-opacity:$i;
+	-o-opacity:$i;
+       opacity:$i;
+}	
+
+// position     ---------------------------------
+
+@mixin p_abs($i:100){$z-index:$i;position:absolute;}
+@mixin p_rel($i:100){$z-index:$i;position:relative;}
+@mixin p_fix($i:100){$z-index:$i;position:fixed;}
+
+// margin / padding -----------------------------
+
+@mixin margin($i,$j,$k,$l){margin-top:$i;
+						   margin-right:$j;
+						   margin-bottom:$k;
+						   margin-left:$l;}
+
+@mixin padding($i,$j,$k,$l){padding-top:$i;
+							padding-right:$j;
+							padding-bottom:$k;
+							padding-left:$l;}
+														
+
+//after 처리    -------------------------------------------
+
+@mixin after($z-index:100,$position:absolute){content:"";display:block;z-index:$z-index;position:$position;}
+
+//최소 높이 넓이 조절   ----------------------------------
+
+@mixin size($i,$j,$k,$l){min-width:$i;width:$j;min-height:$k;height:$l;}
+
+
+//hidden 처리    ------------------------------------------
+
+@mixin hidden{display:block;width:0;height:0;overflow:hidden}
+
+//자주쓰는 background 모음-----------------------------
+
+@mixin back($i,$j){background-size:$j;background-repeat:no-repeat;background-position:center;background-image:url($i);}
+
+
+// 최대 넓이 1200으로 고정------------------------------
+
+@mixin max{max-width:1200px};
+
+// 최소넓이 960으로 고정 -------------------------------
+@mixin min{min-width:960px};
+
+// 폰트사이즈 ------------------------------------------
+
+@mixin font310($i:0.5rem)
+{font-size:$i;
+ font-family:'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;}
+@mixin font320($i:0.5rem)
+{font-size:$i;
+ font-family:'Noto Sans Korean DemiLight', arial, nanumGothic, "돋움", dotum, sans-serif;}
+ @mixin font330($i:0.5rem)
+{font-size:$i;
+ font-family:'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;}
+ @mixin font340($i:0.5rem)
+{font-size:$i;
+ font-family:'Noto Sans Korean Regular ', arial, nanumGothic, "돋움", dotum, sans-serif;}
+ @mixin font350($i:0.5rem)
+{font-size:$i;
+ font-family:'Noto Sans Korean Bold', arial, nanumGothic, "돋움", dotum, sans-serif;}
+  @mixin font360($i:0.5rem)
+{font-size:$i;
+ font-family:'Noto Sans Korean Black', arial, nanumGothic, "돋움", dotum, sans-serif;}
+
+ //1rem = 16px ;

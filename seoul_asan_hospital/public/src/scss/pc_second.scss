@@ -1,0 +1,90 @@
+@import "pc_base";
+@import "lnb";
+body{height:auto;}
+#wrap{width:960px;height:1460px;margin:0 auto;opacity:0.8;}
+
+// important ! ----------------------------------------------------------
+
+#lnb{height:1420px;}
+#lnb>dl>dt:nth-of-type(1){background-color:#006869;color:#fff;}
+#lnb>dl>dt:nth-of-type(1)+dd{display:block;}
+#lnb>dl>dt:nth-of-type(1)+dd>ul>li:nth-of-type(1){background-color:#efefef;color:#c0c0;}
+
+// content ---------------------------------------------------------------
+
+
+#content{width:670px;height:auto;background-color:#fff;float:left;padding-top:70px;padding-left:44px;padding-right:36px;@include b-all(2px);border-left:0}
+/* .content_title{height:} */
+.content_title{width:100%;height:30px;}
+.content_title>h2{@include font330(29px);float:left}
+.content_title>span{@include font330(14px);float:right;padding-top:12px;}
+
+	.contentBox{width:95%;height:32px;margin-top:40px;position:relative;}
+	.contentBox>li{@include font330(18px);float:left;padding-top:4px;padding-bottom:4px;padding-left:24px;padding-right:24px;border:1px solid #b3d6d2;margin-left:4px;cursor:pointer;}
+	.contentBox>li:hover,.contentBox>li:active{background-color:#006869;color:#fff;}
+	.contentBox:after{@include after;width:100%;height:1px;background-color:#006869;bottom:0;margin-left:4px;}
+
+//dl공통
+	#content>dl>dt,#content>dl>dd{padding-left:18px;width:auto;height:auto;}
+	#content>dl>dt{@include font330(18px);}
+	#content>dl>dd{@include font330(14px);}
+
+// dl_01
+	#content>dl:nth-of-type(1){padding-top:50px;padding-bottom:18px;}
+	#content>dl:nth-of-type(1)>dd{padding-top:12px;}
+	
+// dl_02
+	#content>dl:nth-of-type(2){padding-top:50px;}
+	.dl02_span{@include font330(12px);padding-left:30px;}
+	.dl03_h3{padding-left:20px;padding-top:50px;}
+
+
+// dl_03
+	#content>dl:nth-of-type(3){margin-top:40px;width:97%;height:auto;margin-left:20px;background-color:$e9;}
+	#content>dl:nth-of-type(3)>dt{width:100%;height:72px;border-bottom:1px solid $bc;padding-top:12px;padding-bottom:12px}
+	#content>dl:nth-of-type(3)>dt>span,#content>dl:nth-of-type(3)>dt>p{float:left}
+	#content>dl:nth-of-type(3)>dt>p{@include font310(14px);padding-top:12px;}
+	#content>dl:nth-of-type(3)>dt>span{padding-right:20px;padding-top:10px;}
+
+	
+
+//dl_03 > dd
+
+
+	.contentdd_01{@include font330(14px);width:100%;height:174px;padding-left:44px;pading-right:46px;padding-top:30px;background-color:#fff;}
+
+	.contentdd_01>ul{width:100%;height:144px;}
+	.contentdd_01>ul>li{width:calc(25% - 20px);height:144px;float:left;margin-right:20px}
+	.contentdd_01>ul>li:last-child{margin-right:10px;}
+	.contentdd_01>ul>li:first-child{margin-left:10px;}
+	.contentdd_01>ul>li>div{width:100%;height:50%;margin:0 auto;margin-bottom:10px;}
+	
+	.contentdd_01>ul>li>div{background-repeat:no-repeat;background-position:center;}
+	.contentdd_01>ul>li:nth-of-type(1)>div{background-image:url("../img/src/second/sec_icon_01.png")}
+	.contentdd_01>ul>li:nth-of-type(2)>div{background-image:url("../img/src/second/sec_icon_02.png")}
+	.contentdd_01>ul>li:nth-of-type(3)>div{background-image:url("../img/src/second/sec_icon_03.png")}
+	.contentdd_01>ul>li:nth-of-type(4)>div{background-image:url("../img/src/second/sec_icon_04.png")}
+	
+
+	.contentdd_01>ul>li>span{width:100%;height:50%;text-align:center;@include font330(16px);padding-left:20px;}
+	.contentdd_01>ul>li>span:nth-of-type(2){padding-left:35px;}
+
+
+//dl_04
+	
+	.contentdl_04{padding-top:40px;height:300px;}
+	.contentdl_04>dt{padding-bottom:20px;}
+	.contentdl_04>dd{padding-bottom:4px;}
+
+
+// three_buttons
+
+	#three_buttons{width:40px;height:420px;position:absolute;z-index:1000;margin-left:166px;margin-top:600px;@include font360(20px);}
+	#three_buttons>div{margin-top:2px;color:#fff;padding-left:12px;@include nanum(16px,600);text-shadow:1px 1px 1px #666;transition:all 0.3s;cursor:pointer;}
+	#three_buttons>div:hover{transform:scale(1.03);}
+	.first_button{width:40px;height:120px;background-color:#5EB300;padding-top:20px;}
+	.second_button{width:40px;height:120px;background-color:#5276A6;padding-top:10px;}
+	.third_button{width:40px;height:120px;background-color:#6F6F6F;padding-top:10px;}
+
+
+table{@include b-all(2px);border-collapse:collapse;margin-top:30px;@include font330(13px);font-weight:bold;margin-bottom:10px;}

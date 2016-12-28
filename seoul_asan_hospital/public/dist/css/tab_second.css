@@ -1,0 +1,603 @@
+@charset "UTF-8";
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  #headBox {
+    width: 100%;
+    height: 80px;
+    background-color: #fff; }
+    #headBox h1 {
+      min-width: 120px;
+      width: 33.3333333vw;
+      height: 80px;
+      left: 50%;
+      position: absolute;
+      margin-left: -16.6666666vw; }
+      #headBox h1 a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../img/src/logo_640.jpg"); }
+    #headBox img {
+      display: none; }
+    #headBox .headTabs {
+      display: none; }
+    #headBox #menu {
+      width: 34px;
+      height: 24px;
+      background-color: transparent;
+      float: left;
+      margin-left: 2.7777778vw;
+      margin-top: 20px; }
+      #headBox #menu i {
+        font-size: 40px;
+        color: #518b8d;
+        transition: all 0.3s; }
+        #headBox #menu i:hover {
+          transform: scale(1.2); }
+    #headBox #home {
+      width: 34px;
+      height: 24px;
+      background-color: transparent;
+      margin-right: 2.7777778vw;
+      margin-top: 20px;
+      float: right; }
+      #headBox #home i {
+        font-size: 40px;
+        color: #518b8d;
+        transition: all 0.3s; }
+        #headBox #home i:hover {
+          transform: scale(1.2); }
+  #navi, #navi_popup_pc {
+    display: none; }
+  #navi_accordion {
+    position: absolute;
+    width: 46vw;
+    height: auto;
+    background-color: #fdfefe;
+    left: 0;
+    top: 0;
+    margin-top: 80px;
+    z-index: 500;
+    border: 2px solid #b6d7d4;
+    display: none; }
+    #navi_accordion > h2 {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 3.125vw;
+      font-weight: normal;
+      width: 100%;
+      height: 8.125vw;
+      color: #f68b1f;
+      padding-top: 1.25vw;
+      padding-left: 5.625vw;
+      font-size: 2.8125vw; }
+      #navi_accordion > h2 > i {
+        font-size: 4.375vw;
+        margin-top: 0.3125vw;
+        margin-right: 1.5625vw;
+        float: left;
+        transition: all 0.3s; }
+        #navi_accordion > h2 > i:hover {
+          color: #f68b1f; }
+      #navi_accordion > h2 > span {
+        float: left;
+        padding-top: 0.625vw;
+        padding-left: 1.5625vw;
+        text-align: center; }
+    #navi_accordion dt {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 3.125vw;
+      font-weight: normal;
+      width: 100%;
+      height: 8.125vw;
+      border-top: 1px solid #b6d7d4;
+      border-bottom: 1px solid #b6d7d4;
+      float: left;
+      text-align: left;
+      padding-left: 5vw;
+      padding-top: 2.1875vw;
+      color: #6d6e6f;
+      transition: all 0.5s;
+      cursor: pointer; }
+      #navi_accordion dt:hover {
+        background-color: #6d6e6f;
+        color: #fff; }
+    #navi_accordion dd {
+      width: 100%;
+      height: auto;
+      display: none;
+      cursor: pointer; }
+      #navi_accordion dd > ul {
+        height: auto;
+        float: left;
+        text-align: left; }
+        #navi_accordion dd > ul:nth-of-type(1) {
+          width: 55%;
+          display: block; }
+        #navi_accordion dd > ul {
+          width: 45%;
+          display: none; }
+        #navi_accordion dd > ul > li {
+          font-family: 'Noto Sans KR', sans-serif;
+          font-size: 2.3vw;
+          font-weight: normal;
+          padding-left: 6.25vw;
+          color: #6d6e6f;
+          width: 100%;
+          height: 6.25vw;
+          line-height: 2.4;
+          border-right: solid 2px #b6d7d4;
+          transition: all 0.5s; }
+          #navi_accordion dd > ul > li:hover {
+            background-color: #6d6e6f;
+            color: #fff; }
+  #addBanner {
+    transition: all 0.3s;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 300px;
+    height: 46.875vw;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/src/ban_640.jpg"); }
+    #addBanner > .mainBanner {
+      position: absolute;
+      width: 100vw;
+      min-height: 190px;
+      height: 32.77777778vw;
+      margin-top: 5.88888889vw;
+      margin-left: 2.66666667vw;
+      left: 0; }
+      #addBanner > .mainBanner > h2 {
+        margin-top: 2.6666667vw;
+        margin-left: 51.5625vw;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 3.025vw;
+        font-weight: normal;
+        color: #eae2e3; }
+      #addBanner > .mainBanner > h3 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 2.425vw;
+        font-weight: normal;
+        color: #fff;
+        margin-top: 1.5vw;
+        margin-left: 51.5625vw; }
+      #addBanner > .mainBanner > h4 {
+        margin-top: 1.5vw; }
+        #addBanner > .mainBanner > h4 > a {
+          font-family: 'Noto Sans KR', sans-serif;
+          font-size: 3.125vw;
+          font-weight: normal;
+          font-weight: 200;
+          color: #fff;
+          margin-left: 51.5625vw; }
+    #addBanner > div.leftBox {
+      width: 50%;
+      height: 100%;
+      float: left; }
+      #addBanner > div.leftBox > div.textBanner {
+        -webkit-opacity: 0.7;
+        -moz-opacity: 0.7;
+        -o-opacity: 0.7;
+        opacity: 0.7;
+        width: 15.0625vw;
+        min-width: 60px;
+        min-height: 236px;
+        height: 34.975vw;
+        max-height: 350px;
+        background-color: #fff;
+        float: right;
+        margin-top: 5.825vw; }
+        #addBanner > div.leftBox > div.textBanner > p {
+          font-family: 'Noto Sans KR', sans-serif;
+          font-size: 4.5625vw;
+          font-weight: normal;
+          text-align: center;
+          padding-top: 12.5625vw;
+          padding-left: 0.625vw; }
+  #addBanner::after {
+    transition: all 0.3s;
+    content: "";
+    display: block;
+    z-index: 100;
+    position: absolute;
+    border: 6px solid #fff;
+    width: 53.125vw;
+    min-height: 220px;
+    height: 34.375vw;
+    margin-top: 3.125vw;
+    margin-left: 34vw; }
+  #addBanner_02 {
+    display: none; }
+  #content_01 {
+    transition: all 0.3s;
+    width: 100%;
+    height: 62.5vw;
+    background-color: #fff; }
+    #content_01 .textBox_01 {
+      width: 100vw;
+      height: calc(100% - 40.375vw);
+      background-color: #fff; }
+      #content_01 .textBox_01 h2 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 4.25vw;
+        font-weight: normal;
+        color: #006769;
+        padding-left: 38vw;
+        padding-top: 4.6875vw; }
+      #content_01 .textBox_01 h3 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 2.4vw;
+        font-weight: normal;
+        color: #6d6e6f;
+        text-align: center;
+        margin-top: 12.5625px; }
+    #content_01 .insideBox {
+      width: 100vw;
+      min-height: 220px;
+      height: 34.375vw; }
+      #content_01 .insideBox > li {
+        width: 25%;
+        height: 40.375vw;
+        background-color: #fff;
+        float: left; }
+        #content_01 .insideBox > li .sizeBox {
+          width: 100%;
+          height: 100%; }
+          #content_01 .insideBox > li .sizeBox > li {
+            width: 100%;
+            background-color: #fff; }
+            #content_01 .insideBox > li .sizeBox > li:nth-of-type(1) {
+              height: 40%; }
+          #content_01 .insideBox > li .sizeBox > .icon_01 {
+            background-size: 55%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/icon_01.jpg"); }
+          #content_01 .insideBox > li .sizeBox > .icon_02 {
+            background-size: 45%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/icon_02.jpg"); }
+          #content_01 .insideBox > li .sizeBox > .icon_03 {
+            background-size: 45%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/icon_03.jpg"); }
+          #content_01 .insideBox > li .sizeBox > .icon_04 {
+            background-size: 45%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/icon_04.jpg"); }
+          #content_01 .insideBox > li .sizeBox h4 {
+            font-size: 2.8125vw;
+            font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+            height: auto;
+            text-align: center;
+            margin-top: 3.6875vw; }
+          #content_01 .insideBox > li .sizeBox h5 {
+            display: block;
+            font-size: 2.2vw;
+            font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+            height: 40%;
+            color: #6d6e6f;
+            text-align: center;
+            margin-top: 4.625vw; }
+  #content_02 {
+    border-top: 2px solid #b3d6d2;
+    border-bottom: 2px solid #b3d6d2;
+    transition: all 0.3s;
+    width: 100%;
+    height: 54.6875vw; }
+    #content_02 .textBox_02 {
+      width: 100vw;
+      height: calc(18.75vw);
+      background-color: #ecf7f6; }
+      #content_02 .textBox_02 h2 {
+        font-size: 4.25vw;
+        font-family: 'Noto Sans Korean Regular ', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #006769;
+        padding-left: 26vw;
+        padding-top: 4.6875vw; }
+      #content_02 .textBox_02 h3 {
+        font-size: 2.4vw;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #6d6e6f;
+        text-align: center;
+        margin-top: 12.5625px;
+        margin-left: -2vw; }
+    #content_02 ul {
+      width: 100vw;
+      min-height: 200px;
+      height: 31.25vw;
+      background-color: #ecf7f6; }
+      #content_02 ul li {
+        width: 25%;
+        height: 35.95375vw;
+        background-color: #ecf7f6;
+        float: left; }
+        #content_02 ul li a {
+          width: 100%;
+          height: 100%;
+          display: block; }
+          #content_02 ul li a div {
+            width: 100%;
+            height: 60%; }
+          #content_02 ul li a .icon_05 {
+            background-size: 65%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/icon_05.png"); }
+          #content_02 ul li a .icon_06 {
+            background-size: 65%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/icon_06.png"); }
+          #content_02 ul li a .icon_07 {
+            background-size: 65%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/icon_07.png"); }
+          #content_02 ul li a .icon_08 {
+            background-size: 65%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/icon_08.png"); }
+          #content_02 ul li a h4 {
+            width: 100%;
+            text-align: center;
+            font-size: 2.8vw;
+            font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+            line-height: 4;
+            color: #006769; }
+  #content_03 {
+    transition: all 0.3s;
+    border-top: 1px solid #b3d6d2;
+    border-bottom: 1px solid #b3d6d2;
+    width: 100%;
+    min-height: 320px;
+    height: 62.5vw;
+    background-color: #fff; }
+    #content_03 > h2 {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 5.25vw;
+      font-weight: normal;
+      color: #006769;
+      padding-left: 24vw;
+      padding-top: 4.6875vw; }
+    #content_03 .con03_leftBox {
+      max-width: 1200px;
+      width: 50%;
+      min-height: 270px;
+      height: 42.1875vw;
+      float: left;
+      margin-top: 7.8125vw; }
+      #content_03 .con03_leftBox > li {
+        max-width: 1200px;
+        width: 100%;
+        height: 33.33333334%;
+        padding-left: 2.25vw; }
+        #content_03 .con03_leftBox > li > ul {
+          width: 50%;
+          height: 100%;
+          width: 13.75vw;
+          float: left;
+          padding-left: 5vw; }
+          #content_03 .con03_leftBox > li > ul > li {
+            width: 100%;
+            height: 100%; }
+            #content_03 .con03_leftBox > li > ul > li.con03_icon01 {
+              background-size: 90%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-image: url("../img/src/beautiful_icon.jpg"); }
+            #content_03 .con03_leftBox > li > ul > li.con03_icon02 {
+              background-size: 90%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-image: url("../img/src/center_icon.jpg"); }
+            #content_03 .con03_leftBox > li > ul > li.con03_icon03 {
+              background-size: 90%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-image: url("../img/src/story_icon.jpg"); }
+        #content_03 .con03_leftBox > li > h3 {
+          line-height: 2vw;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-size: 3.25vw;
+          font-weight: normal;
+          padding-left: 4.25vw;
+          padding-top: 5.8125vw;
+          float: left; }
+    #content_03 .imgBox {
+      width: 50%;
+      min-height: 270px;
+      height: 42.1875vw;
+      margin-top: 7.8125vw;
+      float: right;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../img/src/donation_pic.png"); }
+  #articleBox {
+    transition: all 0.3s;
+    border-top: 2px solid #b3d6d2;
+    border-bottom: 2px solid #b3d6d2;
+    width: 100%;
+    min-height: 420px;
+    height: 65.625vw;
+    background-color: #518b8d; }
+    #articleBox > .art_textBox {
+      position: absolute;
+      width: 91.1111111vw;
+      height: 72.2222222vw;
+      margin-top: 3.88888889vw;
+      margin-left: 1.77777778vw;
+      padding-left: 12vw;
+      padding-top: 5vw; }
+      #articleBox > .art_textBox > h2 {
+        font-size: 6.44445vw;
+        font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #fefefe;
+        padding-left: 6vw; }
+      #articleBox > .art_textBox > h3 {
+        font-size: 4.22222vw;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #e0e9e9;
+        padding-top: 3vw; }
+      #articleBox > .art_textBox > h4 {
+        font-size: 3.66667vw;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #ecf7f6;
+        padding-top: 2vw; }
+      #articleBox > .art_textBox > a {
+        font-size: 3.66667vw;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        display: block;
+        width: auto;
+        height: auto;
+        color: #ecf7f6;
+        padding-top: 3vw; }
+  #articleBox::after {
+    content: "";
+    display: block;
+    z-index: 100;
+    position: absolute;
+    border: 8px solid #fff;
+    min-width: 560px;
+    width: 87.5vw;
+    min-height: 364px;
+    height: 56.875vw;
+    margin-top: 22px;
+    margin-left: 3.75vw; }
+  #articleTab {
+    transition: all 0.3s;
+    border-top: 2px solid #b3d6d2;
+    border-bottom: 2px solid #b3d6d2;
+    width: 100%;
+    min-height: 240px;
+    height: 37.5vw;
+    background-color: #4c4d4f; }
+    #articleTab ul {
+      width: 100%;
+      height: 100%; }
+      #articleTab ul > li {
+        width: 100%;
+        height: 33.333334%;
+        color: #efefef;
+        padding-top: 12px; }
+        #articleTab ul > li span {
+          width: 52px;
+          height: 52px;
+          background-color: #fff;
+          float: left;
+          margin-left: 30px; }
+          #articleTab ul > li span.artTab_icon_01 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/awards.png"); }
+          #articleTab ul > li span.artTab_icon_02 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/earth.png"); }
+          #articleTab ul > li span.artTab_icon_03 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/robot.png"); }
+        #articleTab ul > li p {
+          font-family: 'Noto Sans KR', sans-serif;
+          font-size: 3.44445vw;
+          font-weight: normal;
+          width: 63.333333vw;
+          float: left;
+          padding-left: 60px;
+          color: #efefef; }
+        #articleTab ul > li a {
+          display: block;
+          float: right;
+          padding-top: 30px;
+          float: right;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-size: 2.9vw;
+          font-weight: normal;
+          color: #efefef;
+          padding-right: 6.25vw; }
+  #footBox {
+    transition: all 0.3s;
+    width: 100%;
+    min-height: 180px;
+    height: 28.125vw;
+    background-color: #fff; }
+    #footBox .snb {
+      width: 100%;
+      min-height: 60px;
+      height: 9.375vw;
+      background-color: #efefef; }
+      #footBox .snb .snb_for_pc {
+        display: none; }
+      #footBox .snb > .snb_for_mini {
+        width: inherit;
+        height: inherit;
+        padding-top: 1.555555vw;
+        padding-left: 14.4444445vw; }
+        #footBox .snb > .snb_for_mini > li {
+          float: left;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-size: 4.22222vw;
+          font-weight: normal; }
+          #footBox .snb > .snb_for_mini > li:nth-of-type(2) {
+            color: #f68b1f;
+            margin-left: 8.444444vw; }
+          #footBox .snb > .snb_for_mini > li:nth-of-type(3) {
+            margin-left: 8.444444vw; }
+          #footBox .snb > .snb_for_mini > li > i {
+            color: #f68b1f;
+            padding-right: 2.222222vw; }
+    #footBox .fnb > .fnb_for_mini {
+      display: none; }
+    #footBox .fnb > .fnb_for_pc > .medals {
+      display: none; }
+    #footBox .fnb .footQuick {
+      transition: all 0.3s;
+      width: 100vw;
+      height: 6.25vw;
+      text-align: center; }
+      #footBox .fnb .footQuick ul {
+        width: inherit;
+        height: inherit; }
+        #footBox .fnb .footQuick ul.first_line {
+          padding-left: 2.1875vw;
+          padding-top: 3.125vw; }
+        #footBox .fnb .footQuick ul.second_line {
+          display: none; }
+        #footBox .fnb .footQuick ul > li {
+          font-size: 2.2vw;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          color: #6d6e6f;
+          float: left;
+          margin-left: 24px; }
+    #footBox .fnb .address {
+      transition: all 0.3s;
+      font-family: 'Nanum Gothic', sans-serif;
+      font-size: 15px;
+      font-weight: normal;
+      color: #4c4d4f;
+      width: 100%;
+      height: 18.75vw;
+      padding-top: 2.1875vw;
+      text-align: center;
+      line-height: 1.6; }
+  #footPopup_site {
+    display: none; }
+  #footPopup_allMenu {
+    display: none; } }
+
+div {
+  width: 100%;
+  height: 100%; }

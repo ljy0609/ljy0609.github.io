@@ -1,0 +1,201 @@
+@import "pc_base";
+@import "lnb";
+html,body{height:auto;}
+#wrap{width:960px;height:1740px;margin:0 auto;opacity:0.8;}
+
+// important ! ----------------------------------------------------------
+
+#lnb>dl>dt:nth-of-type(1){background-color:#006869;color:#fff;}
+#lnb>dl>dt:nth-of-type(1)+dd{display:block;}
+#lnb>dl>dt:nth-of-type(1)+dd>ul>li:nth-of-type(1){background-color:#efefef;color:#c0c0;}
+#lnb>h2{@include noto(26px);}
+
+// content ---------------------------------------------------------------
+
+
+#content{width:670px;
+		 height:auto;
+		 background-color:#fff;
+		 float:left;
+		 padding-top:70px;
+		 padding-left:44px;
+		 padding-right:36px;
+		 @include b-all(2px);border-left:0}
+
+/* .content_title */
+
+.content_title{width:100%;height:30px;}
+.content_title>h2{@include noto(29px);float:left}
+.content_title>span{@include noto(14px);float:right;padding-top:12px;}
+
+
+
+// searchingBox
+
+
+//form
+	.searchingBox{width:100%;
+				  height:520px;
+				  margin-top:65px;}
+	.searchingBox>h3{@include noto(20px);position:relative;}
+	.searchingBox>h3::after{@include after(100);
+							width:16px;
+							height:16px;
+							background-color:#338687;
+							border-radius:50%;
+							margin-top:5px;
+							top:0;
+							left:0;
+							margin-left:20px}
+	
+	.searchingBox>h3::before{@include after(200);
+							width:10px;
+							height:10px;
+							background-color:#fff;
+							border-radius:50%;
+							left:0;
+							top:0;
+							margin-top:8px;
+							margin-left:23px;}
+	
+	.searchingBox>p{@include nanum(14px);margin-top:10px;}
+
+	.searchingBox>h3,.searchingBox>p{padding-left:50px;}
+	
+	.searchingBox>form{width:100%;
+					   height:40px;
+					   background-color:#639db1;
+					   padding-bottom:6px;
+					   margin-top:38px;}
+	.searching_content{width:auto;height:40px;margin-left:128px;padding-top:6px;}
+	
+	.searchingBox>form label{@include noto(20px);padding-right:16px;color:#fff;} 
+	.searchingBox input{width:204px;padding-right:16px;}
+	.searchingBox>form button{width:60px;
+							 height:20px;
+							 text-align:center;
+							 color:#3f8096;
+							 margin-left:16px;
+							 background-color:#3f8096;
+							 color:#fff;
+							 @include noto(16px);} 
+
+
+//five_tabs
+	.five_tabs{width:100%;height:40px;margin-top:60px;}
+	.five_tabs>ul{width:100%;height:inherit;}
+	.five_tabs li{width:19.2%;
+				  height:inherit;
+				  background-color:#ededed;
+				  margin-left:1%;
+				  float:left;
+				  text-align:center;
+				  color:#096c6e;
+				  @include noto(18px);
+				  padding-top:6px;transition:all 0.3s;cursor:pointer;}
+
+	.five_tabs li:hover{background-color:#3f8096;color:#fff}
+
+	.five_tabs li:first-child{margin-left:0};
+
+
+// alphaBox
+
+.alphaBox{width:100%;
+		  height:300px;
+		  background-color:#ededed;
+		  margin-top:28px;}
+
+.alphaBox>dt{width:90px;
+			 height:25%;
+			 float:left;
+			 @include noto(20px,bold);
+			 text-align:center;
+			 padding-top:20px;
+			 background:#ededed;}
+
+.alphaBox>dd{width:580px;
+			 height:25%;
+			 float:left;
+			 background-color:#ededed;}
+.alphaBox>dd>div:nth-child(1){width:100%;height:50%;}
+.alphaBox>dd>div>a{display:block;width:auto;height:auto;@include nanum(15px);float:left;transition:all 0.3s;line-height:2;padding-left:8px;}
+.alphaBox>dd>div>a:hover{@include noto(15px,bold)}
+
+	
+//.professorBox
+
+.professorBox{width:100%;height:auto;padding-top:30px;padding-bottom:80px;}
+.professorBox>h2{@include noto(18px,bold);width:auto;height:auto;margin-top:30px;}
+
+.professorBox>h2::after{@include after();
+						width:86px;
+						height:1px;
+						background-color:$b_font;
+						margin-top:10px;}
+
+
+.professorBox ul{width:100%;height:400px;;margin-top:44px;}
+.professorBox li{width:152px;height:400px;float:left;margin-right:20.5px;}
+.professorBox li:last-child{margin-right:0}
+.professorBox img{width:152px;height:188px;}
+.professorBox span{@include noto(16px,bold);width:auto;height:auto;}
+.professorBox span:after{@include after();width:142px;height:1px;background-color:$b_font;margin-top:10px;}
+.professorBox dl{width:100%;height:auto;background-color:#ddd;margin-top:20px;}
+.professorBox dl>dt{@include noto(14px);width:40%;height:auto;float:left;}
+.professorBox dl>dd{@include noto(14px);width:60%;height:auto;float:right;}
+
+.professorBox button{width:48%;height:24px;float:left;border:1px solid #888181;color:#726969;@include noto(14px);margin-top:15px;transition:all 0.3s}
+.professorBox button:nth-of-type(2){background-color:#006869;color:#fff;float:right;}
+
+.professorBox button:hover{background-color:transparent;}
+.professorBox button:nth-of-type(2):hover{color:#888181;}
+
+
+// third_tab
+
+	.third_tab{width:368px;
+			   height:40px;
+			   margin-top:66px;}
+	
+	.third_tab li{width:120px;
+				  height:40px;
+				  border:2px solid #096c6e;
+				  float:left;
+				  margin-left:4px;
+				  text-align:center;
+				  line-height:1.8;
+				  @include noto(20px);
+				  cursor:pointer;}
+	.third_tab li:nth-of-type(1){margin-left:0;border-bottom:0;}
+	.third_tab li:nth-of-type(2){border:2px solid #b3d6d2;}
+	.third_tab li:nth-of-type(3){border:2px solid #b3d6d2;}
+	.third_tab li:nth-of-type(1):after{@include after();
+									  width:23%;
+									  height:2px;
+									  background-color:#096c6e;
+									  left:44.2%}
+
+//tabBox
+
+.tabBox{width:670px;height:100%;}
+.tabBox>div.tab_01{width:670px;height:930px}
+.tabBox>div.tab_02{width:670px;height:804px;display:none;}
+.tabBox>div.tab_03{width:670px;height:1511px;display:none;}
+
+.tab_01{@include back("../img/src/third/traffic_tab.png",100%)}
+.tab_02{@include back("../img/src/third/subway_tab.png",100%)}
+.tab_02{@include back("../img/src/third/car_tab.png",100%)}
+// .tab_03{@include back("../img/src/third/")}
+
+// three_buttons
+
+#three_buttons{width:40px;height:420px;position:absolute;z-index:1000;margin-left:166px;margin-top:600px;@include font360(20px);}
+#three_buttons>div{margin-top:2px;color:#fff;padding-left:12px;@include nanum(16px,600);text-shadow:1px 1px 1px #666;transition:all 0.3s;cursor:pointer;}
+#three_buttons>div:hover{transform:scale(1.03);}
+.first_button{width:40px;height:120px;background-color:#5EB300;padding-top:20px;}
+.second_button{width:40px;height:120px;background-color:#5276A6;padding-top:10px;}
+.third_button{width:40px;height:120px;background-color:#6F6F6F;padding-top:10px;}
+
+
+table{@include b-all(2px);border-collapse:collapse;margin-top:30px;@include font330(13px);font-weight:bold;margin-bottom:10px;}

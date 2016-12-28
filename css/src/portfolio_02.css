@@ -1,0 +1,125 @@
+/* mousewheel.css */
+@media screen and (min-width:960px) and (max-width:2560px) {
+body,html{width:100%;height:100%}
+/* headBox */
+svg{position:absolute;transition:0.3s;}
+polygon:hover{stroke:rgba(255,255,255,0);}
+
+#headBox{width: 100vw; 
+		 height: 4rem;
+		 position:fixed;
+		 z-index:1000;
+		 position:top;
+		 padding-top:30px;
+		 background-color:#ffdde4;}
+#headBox>h1{color:#fff;
+			font-family:sans-serif;
+			font-weight:100;
+			font-size:1.2rem;
+			float:left;
+			margin-left:12.95833333vw;
+			color:#424242;}
+#headBox>nav{width:auto;
+			height:2rem;
+			float:left;
+			margin-left:16.75vw;}
+
+#headBox>nav>a{	display:block;
+				float:left;
+				color:#424242;
+				font-family:'Lato', sans-serif;
+				font-weight:100;
+				font-size:1.2rem;
+				cursor:pointer;}			
+
+#headBox>nav>a:nth-of-type(1){margin-left:0}
+#headBox>nav>a{margin-left:4.6875vw;transition:0.3s;}
+#headBox>nav>a:hover{font-size:1.4rem;font-weight:bold;}
+#headBox>nav>a:nth-of-type(3){font-weight:bold;font-size:1.4rem;transition:0.3s;}
+#headBox>nav>a:nth-of-type(3):hover{font-size:1.2rem;}
+
+	#gnb{width:3rem; 
+		 height: auto; 
+		 position: fixed; 
+		 top: 50%; 
+		 right:0.520833vw; 
+		 z-index: 1000;
+		 margin-top:-3rem;}
+	
+	#gnb>ul{width: 100%; height: auto;}
+	#gnb>ul>li{width: 100%; 
+			   height: 1rem; 
+			   margin-bottom:2rem; 
+			   position: relative;}
+
+	#gnb>ul>li:last-child{margin-bottom: 0;}
+	#gnb>ul>li i{width: 0.8rem;
+				 height: 0.8rem; 
+				 display: block;
+				 background-color:rgba(255,255,255,0.8); 
+				 border-radius:100%;
+				 border:1px solid #424242}
+
+	#gnb>ul>li span{display: block; 
+					width:0;  
+					padding:0; 
+					overflow: hidden;
+					border-radius:0.3rem;
+					position: absolute;	
+					right: 3.5rem; 
+					top:0;
+					color:#424242; 
+					font-weight:normal;
+					font-family:'Lato',sans-serif; 
+					transition:width;padding 0.5s;}
+
+		#gnb>ul>li:hover span{width: auto; padding:0.2rem 2rem;}
+
+
+
+
+#addBox{width: 100vw; 
+		height: 100%;
+		background:linear-gradient(to bottom,#ffdde4,#fff);
+		background-repeat:no-repeat;
+		position:relative;}
+		svg.addBox_svg{top:50%;left:50%;margin-left:-300px;margin-top:-250px;transition:0.3s;width:1000px;height:600px;}
+		img.main_font{width:100%;height:105%;position:absolute;}
+
+/*content*/
+
+#content_01{width: 100vw; 
+		 height:737.35vw;
+		 background-image:url("../../svg/fender.jpg");
+		 background-repeat:no-repeat;
+		 background-size:90%;
+		 background-position:0 0;
+		}
+#content_02{width: 100vw; 
+		 height:740.25vw;
+		 background-image:url("../../svg/fender_02.jpg");
+		 background-repeat:no-repeat;
+		 background-size:90%;
+		 background-position:0 0;
+		}
+
+
+
+/*.close */
+
+	button.close{width:3.125vw;height:3.125vw;position:fixed;
+				top:0;right:0;margin-top:2.625rem;
+				 margin-right:4.3333333vw;transform:rotate(45deg);transition:all 0.3s;background-color:transparent;}
+
+	button.close::after{content:"";display:block;width:0.20833333333vw;height:3.125vw;background-color:#fff;
+						position:absolute;left:50%;top:0;z-index:500;margin-left:-0.104166666667vw;}
+
+	button.close::before{content:"";display:block;width:3.125vw;height:0.2083333333vw;background-color:#fff;
+						 position:absolute;top:50%;left:50%;margin-left:-1.5625vw;margin-top:-0.2083333333vw;}
+	button.close:hover{transform:rotate(90deg);}
+
+
+
+
+#fnb{width: 100vw; height: 100%; background-color: #07e;}
+#footBox{width: 100vw; height: 100%; background-color: #a8c;}

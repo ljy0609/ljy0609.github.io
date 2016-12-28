@@ -1,0 +1,154 @@
+@import "pc_base";
+@import "lnb";
+html,body{height:auto;}
+#wrap{width:960px;height:100%;margin:0 auto;opacity:0.8;}
+
+// important ! ----------------------------------------------------------
+
+#lnb>dl>dt:nth-of-type(1){background-color:#006869;color:#fff;}
+#lnb>dl>dt:nth-of-type(1)+dd{display:block;}
+#lnb>dl>dt:nth-of-type(1)+dd>ul>li:nth-of-type(1){background-color:#efefef;color:#c0c0;}
+
+
+// content ---------------------------------------------------------------
+
+
+#content{width:670px;height:2000px;background-color:#fff;float:left;padding-top:70px;padding-left:44px;padding-right:36px;@include b-all(2px);border-left:0}
+/* .content_title{height:} */
+.content_title{width:100%;height:30px;}
+.content_title>h2{@include noto(29px);float:left}
+.content_title>span{@include noto(14px);float:right;padding-top:12px;}
+
+
+// question_title
+
+.question_title{width:100%;height:100px;background-color:#e9d;margin-top:40px;}
+
+.question_title>img{width:64px;height:48px;float:left;margin-top:10px;}
+.question_title>h3{@include noto(24px);
+				   width:auto;
+				   height:auto;
+				   float:left;
+				   padding-left:20px;}
+
+.question_title>p{@include noto(16px);
+				  width:auto;
+				  height:auto;
+				  float:left;
+				  padding-left:20px;}
+
+// searchingBar				  
+
+form.searchingBar{width:100%;
+				  height:40px;
+				  background-color:#f0f0f0;
+				  padding-left:34px;
+				  padding-top:12px;
+				  padding-bottom:14px;
+				  margin-top:26px;}
+
+.searchingBar fieldset{width:100%;height:auto;}
+
+.searchingBar label{width:auto;
+					height:auto;
+					margin-right:16px;
+					@include noto(16px,bold);
+					float:left;}
+
+.searchingBar select{width:100px;height:22px;margin-right:20px;float:left}
+.searchingBar input{width:306px;height:22px;float:left;}
+.searchingBar button{width:22px;height:22px;}
+
+
+//fifth_tabs--------------------------------------------------------
+
+.fifth_tabs{width:670px;height:50px;background-color:#f90a;margin-top:40px;}
+.fifth_tabs>ul{width:100%;height:50px;background-color:#f90a;}
+.fifth_tabs>ul>li{height:50px;
+				  float:left;
+				  padding:0 30px;
+				  background-color:#aaa;
+				  color:#1f7a7b;
+				  @include noto(16px);
+				  line-height:2.5};
+.fifth_tabs>ul>li{background-color:#fff;}
+.fifth_tabs>ul>li:nth-of-type(1){border:3px solid #1f7a7b;border-bottom:0;position:relative;}
+.fifth_tabs>ul>li:nth-of-type(1)::after{@include after();background-color:#1f7a7b;width:650%;height:3px;bottom:0;left:100%;}
+.fifth_tabs>ul>li:nth-of-type(1)~li{border:1px solid #bebebe;margin-left:2px;}
+
+
+//category
+
+.categoryBox{width:100%;height:660px;background-color:#af0;margin-top:70px;}
+	.category{width:100%;height:554px;background-color:#adadad;}
+	.category img{float:left;}
+	.category>dl:nth-of-type(1){width:215px;
+								height:100%;
+								background-color:#a9d}
+	.category>dl:nth-of-type(2){width:455px;
+								height:100%;
+								background-color:#9ad}
+	
+//dl _01(.cate_dl01)
+
+	.cate_dl01>dt,.cate_dl01>dd{width:100%;
+									height:9.09090909%;
+									background-color:#afc;
+									float:left;
+									padding-top:20px;
+									padding-left:20px;
+									@include noto(16px,bold);}
+		
+	.cate_dl01>dd>p{padding-left:20px;}
+
+
+//dl_02(.cate_dl02)
+
+
+// third_tab
+
+	.third_tab{width:368px;
+			   height:40px;
+			   margin-top:66px;}
+	
+	.third_tab li{width:120px;
+				  height:40px;
+				  border:2px solid #096c6e;
+				  float:left;
+				  margin-left:4px;
+				  text-align:center;
+				  line-height:1.8;
+				  @include noto(20px);
+				  cursor:pointer;}
+	.third_tab li:nth-of-type(1){margin-left:0;border-bottom:0;}
+	.third_tab li:nth-of-type(2){border:2px solid #b3d6d2;}
+	.third_tab li:nth-of-type(3){border:2px solid #b3d6d2;}
+	.third_tab li:nth-of-type(1):after{@include after();
+									  width:23%;
+									  height:2px;
+									  background-color:#096c6e;
+									  left:44.2%}
+
+//tabBox
+
+.tabBox{width:670px;height:100%;}
+.tabBox>div.tab_01{width:670px;height:930px}
+.tabBox>div.tab_02{width:670px;height:804px;display:none;}
+.tabBox>div.tab_03{width:670px;height:1511px;display:none;}
+
+.tab_01{@include back("../img/src/third/traffic_tab.png",100%)}
+.tab_02{@include back("../img/src/third/subway_tab.png",100%)}
+.tab_02{@include back("../img/src/third/car_tab.png",100%)}
+// .tab_03{@include back("../img/src/third/")}
+
+// three_buttons
+
+#three_buttons{width:40px;height:420px;position:absolute;z-index:1000;margin-left:166px;margin-top:600px;@include font360(20px);}
+#three_buttons>div{margin-top:2px;color:#fff;padding-left:12px;@include nanum(16px,600);text-shadow:1px 1px 1px #666;transition:all 0.3s;cursor:pointer;}
+#three_buttons>div:hover{transform:scale(1.03);}
+.first_button{width:40px;height:120px;background-color:#5EB300;padding-top:20px;}
+.second_button{width:40px;height:120px;background-color:#5276A6;padding-top:10px;}
+.third_button{width:40px;height:120px;background-color:#6F6F6F;padding-top:10px;}
+
+
+table{@include b-all(2px);border-collapse:collapse;margin-top:30px;@include font330(13px);font-weight:bold;margin-bottom:10px;}

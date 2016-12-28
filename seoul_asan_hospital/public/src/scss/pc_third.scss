@@ -1,0 +1,86 @@
+@import "pc_base";
+@import "lnb";
+html,body{height:auto;}
+#wrap{width:960px;height:1740px;margin:0 auto;opacity:0.8;}
+
+// important ! ----------------------------------------------------------
+
+#lnb{height:1678px;}
+#lnb>dl>dt:nth-of-type(1){background-color:#006869;color:#fff;}
+#lnb>dl>dt:nth-of-type(1)+dd{display:block;}
+#lnb>dl>dt:nth-of-type(1)+dd>ul>li:nth-of-type(1){background-color:#efefef;color:#c0c0;}
+
+// content ---------------------------------------------------------------
+
+
+#content{width:670px;height:1678px;background-color:#fff;float:left;padding-top:70px;padding-left:44px;padding-right:36px;@include b-all(2px);border-left:0}
+/* .content_title{height:} */
+.content_title{width:100%;height:30px;}
+.content_title>h2{@include noto(29px);float:left}
+.content_title>span{@include noto(14px);float:right;padding-top:12px;}
+
+
+
+// guideBox_info
+.guideBox{width:100%;height:auto;background-color:#fff}
+.guideBox_info{width:670px;height:100px;margin-top:66px;background-color:#efefef;border-top:1px solid #ccc;}
+.guideBox_info{padding:20px 8px 20px;}
+.guideBox_info>li,.guideBox_info img,.guideBox_info p{float:left;}
+.guideBox_info p{@include noto(14px);text-indent:10px}
+.guideBox_info p:nth-of-type(2){line-height:2;}
+.guideBox_info>li:nth-of-type(1){width:70%;height:100%;padding-left:36px;}
+.guideBox_info>li:nth-of-type(2){width:30%;height:100%;}
+.guideBox_info>li:nth-of-type(2)::after{@include after();border:1px solid #ddd;}
+.guideBox_info>li:nth-of-type(2)>p:nth-of-type(2){width:100px;height:300px;}
+
+
+// daumRoughmapContainer1480311077118
+
+#daumRoughmapContainer1480311077118{margin-top:40px;}
+
+// third_tab
+
+	.third_tab{width:368px;
+			   height:40px;
+			   margin-top:66px;}
+	.third_tab li{width:120px;
+				  height:40px;
+				  border:2px solid #096c6e;
+				  float:left;
+				  margin-left:4px;
+				  text-align:center;
+				  line-height:1.8;
+				  @include noto(20px);
+				  cursor:pointer;}
+	.third_tab li:nth-of-type(1){margin-left:0;border-bottom:0;}
+	.third_tab li:nth-of-type(2){border:2px solid #b3d6d2;}
+	.third_tab li:nth-of-type(3){border:2px solid #b3d6d2;}
+	.third_tab li:nth-of-type(1):after{@include after();
+									  width:23%;
+									  height:2px;
+									  background-color:#096c6e;
+									  left:44.2%}
+
+//tabBox
+
+.tabBox{width:670px;height:100%;}
+.tabBox>div.tab_01{width:670px;height:930px}
+.tabBox>div.tab_02{width:670px;height:804px;display:none;}
+.tabBox>div.tab_03{width:670px;height:1511px;display:none;}
+
+.tab_01{@include back("../img/src/third/traffic_tab.png",100%)}
+.tab_02{@include back("../img/src/third/subway_tab.png",100%)}
+.tab_02{@include back("../img/src/third/car_tab.png",100%)}
+// .tab_03{@include back("../img/src/third/")}
+
+// three_buttons
+
+	#three_buttons{width:40px;height:420px;position:absolute;z-index:1000;margin-left:166px;margin-top:600px;@include font360(20px);}
+	#three_buttons>div{margin-top:2px;color:#fff;padding-left:12px;@include nanum(16px,600);text-shadow:1px 1px 1px #666;transition:all 0.3s;cursor:pointer;}
+	#three_buttons>div:hover{transform:scale(1.03);}
+	.first_button{width:40px;height:120px;background-color:#5EB300;padding-top:20px;}
+	.second_button{width:40px;height:120px;background-color:#5276A6;padding-top:10px;}
+	.third_button{width:40px;height:120px;background-color:#6F6F6F;padding-top:10px;}
+
+
+table{@include b-all(2px);border-collapse:collapse;margin-top:30px;@include font330(13px);font-weight:bold;margin-bottom:10px;}

@@ -1,6 +1,6 @@
 /* mousewheel.css */
-@media screen and (min-width:960px) and (max-width:2560px) {
-body,html{width:100%;height:100%;overflow-x:hidden;}
+@media screen and (min-width:640px) and (max-width:959px) {
+body,html{width:100%;height:100%;}
 /* headBox */
 svg{position:absolute;transition:0.3s;}
 polygon:hover{stroke:rgba(255,255,255,0);}
@@ -10,8 +10,9 @@ polygon:hover{stroke:rgba(255,255,255,0);}
 		 position:fixed;
 		 z-index:1000;
 		 position:top;
-		 padding-top:30px;
-		 background-color:#ffdde4;}
+		 padding-top:20px;
+		 padding-bottom:20px;
+		 background-color:#e6fff7;}
 #headBox>h1{color:#fff;
 			font-family:sans-serif;
 			font-weight:100;
@@ -19,10 +20,12 @@ polygon:hover{stroke:rgba(255,255,255,0);}
 			float:left;
 			margin-left:12.95833333vw;
 			color:#424242;}
-#headBox>nav{width:auto;
-			 height:2rem;
-			 float:left;
-			 margin-left:16.75vw;}
+
+#headBox>nav{width:100%;
+			height:2rem;
+			float:left;
+			margin-left:12.95833333vw;
+			margin-top:1.2rem;}
 
 #headBox>nav>a{	display:block;
 				float:left;
@@ -35,16 +38,52 @@ polygon:hover{stroke:rgba(255,255,255,0);}
 #headBox>nav>a:nth-of-type(1){margin-left:0}
 #headBox>nav>a{margin-left:4.6875vw;transition:0.3s;}
 #headBox>nav>a:hover{font-size:1.4rem;font-weight:bold;}
-#headBox>nav>a:nth-of-type(3){font-weight:bold;font-size:1.4rem;transition:0.3s;}
-#headBox>nav>a:nth-of-type(3):hover{font-size:1.2rem;}
+#headBox>nav>a:nth-of-type(2){font-weight:bold;font-size:1.4rem;transition:0.3s;}
+#headBox>nav>a:nth-of-type(2):hover{font-size:1.2rem;font-weight:bold;}
 
+	#gnb{width:3rem; 
+		 height: auto; 
+		 position: fixed; 
+		 top: 50%; 
+		 right:0.520833vw; 
+		 z-index: 1000;
+		 margin-top:-3rem;}
+	
+	#gnb>ul{width: 100%; height: auto;}
+	#gnb>ul>li{width: 100%; 
+			   height: 1rem; 
+			   margin-bottom:2rem; 
+			   position: relative;}
+
+	#gnb>ul>li:last-child{margin-bottom: 0;}
+	#gnb>ul>li i{width: 0.8rem;
+				 height: 0.8rem; 
+				 display: block;
+				 background-color:rgba(255,255,255,0.8); 
+				 border-radius:100%;
+				 border:1px solid #424242}
+
+	#gnb>ul>li span{display: block; 
+					width:0;  
+					padding:0; 
+					overflow: hidden;
+					border-radius:0.3rem;
+					position: absolute;	
+					right: 3.5rem; 
+					top:0;
+					color:#424242; 
+					font-weight:normal;
+					font-family:'Lato',sans-serif; 
+					transition:width;padding 0.5s;}
+
+		#gnb>ul>li:hover span{width: auto; padding:0.2rem 2rem;}
 
 
 
 
 #addBox{width: 100vw; 
 		height: 100%;
-		background:linear-gradient(to bottom, #ffdde4, #fff);
+		background:linear-gradient(to bottom, #e6fff7, #fff);
 		background-repeat:no-repeat;
 		position:relative;}
 		svg.addBox_svg{top:50%;left:50%;margin-left:-300px;margin-top:-250px;transition:0.3s;width:1000px;height:600px;}
@@ -52,47 +91,20 @@ polygon:hover{stroke:rgba(255,255,255,0);}
 
 /*content*/
 
-#content_01{display:none;}
-#content_02{display:none;}
-#content_03{width: 100vw; 
-		 	height:1356.5vw;
-		 	background-image:url("../../svg/fender_00.jpg");
-		 	background-repeat:no-repeat;
-		 	background-size:contain;
-		 	background-position:0 0;}
-#content_03>.link_box{width:100vw;height:166.5vw;position:relative;}
+#content{width: 100vw; 
+		 height:721.25vw;
+		 background-image:url("../../svg/test.jpg");
+		 background-repeat:no-repeat;
+		 background-size:90%;
+		 background-position:0 0;}
 
-.link_box button{  width:15vw;
-				   height:4vw;
-	    		   padding:1 1vw;
-	    		   border:2px solid #006769;
-				   background-color:rgba(245,245,245,0.5);
-				   font-family:'Lato', sans-serif;
-				   transition:0.3s;
-				   position:absolute;
-				   bottom:0;
-				   right:0;
-				   float:left;
-				   margin-right:5vw;
-				   animation-name:pc_line;
-				   animation-duration:1s;
-				   animation-direction:alternate;
-				   animation-iteration-count:infinite;
-				   animation-timing-function:linear;}
-.link_box button:hover{transform:scale(1.05);}
-.link_box button:nth-of-type(1){margin-right:25vw;}
-.link_box button:nth-of-type(2){}
 
-@keyframes pc_line{
-	0%{}
-	100%{background-color:rgba(200,200,200,0.5);border:2px solid #fff;}
-}
 
 
 /*.close */
 
-button.close{width:3.125vw;height:3.125vw;
-			position:fixed;top:0;right:0;margin-top:2.625rem;
+	button.close{width:3.125vw;height:3.125vw;position:fixed;
+				top:0;right:0;margin-top:2.625rem;
 				 margin-right:4.3333333vw;transform:rotate(45deg);transition:all 0.3s;background-color:transparent;}
 
 	button.close::after{content:"";display:block;width:0.20833333333vw;height:3.125vw;background-color:#fff;

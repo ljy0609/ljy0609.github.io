@@ -1,5 +1,5 @@
 /* mousewheel.css */
-@media screen and (min-width:960px) and (max-width:2560px) {
+@media screen and (min-width:360px) and (max-width:639px) {
 body,html{width:100%;height:100%;overflow-x:hidden;}
 /* headBox */
 svg{position:absolute;transition:0.3s;}
@@ -10,7 +10,8 @@ polygon:hover{stroke:rgba(255,255,255,0);}
 		 position:fixed;
 		 z-index:1000;
 		 position:top;
-		 padding-top:30px;
+		 padding-top:20px;
+		 padding-bottom:20px;
 		 background-color:#fff;}
 
 #headBox>h1{color:#fff;
@@ -18,32 +19,33 @@ polygon:hover{stroke:rgba(255,255,255,0);}
 			font-weight:100;
 			font-size:1.2rem;
 			float:left;
-			margin-left:12.95833333vw;
+			margin-left:6.75vw;
 			color:#424242;}
 
-#headBox>h2{width:auto;
+#headBox>h2{width:100%;
 			height:2rem;
 			float:left;
-			margin-left:16.75vw;}
+			margin-left:6.75vw;
+			margin-top:1.2rem;}
 
 #headBox>h2>a{	display:block;
 				float:left;
 				color:#424242;
 				font-family:'Lato', sans-serif;
 				font-weight:100;
-				font-size:1.2rem;
+				font-size:0.9rem;
 				cursor:pointer;}			
 #headBox>h2>a:nth-of-type(1){margin-left:0}
-#headBox>h2>a{margin-left:4.6875vw;transition:0.3s;}
-#headBox>h2>a:hover{font-size:1.4rem;font-weight:bold;}
-#headBox>h2>a:nth-of-type(1){font-weight:bold;font-size:1.4rem;transition:0.3s;}
-#headBox>h2>a:nth-of-type(1):hover{font-size:1.2rem;}
-
+#headBox>h2>a{margin-left:3.6875vw;transition:0.3s;}
+#headBox>h2>a:hover{font-size:1.1rem;font-weight:bold;}
+#headBox>h2>a:nth-of-type(4){font-weight:bold;font-size:1.1rem;transition:0.3s;}
+#headBox>h2>a:nth-of-type(4):hover{font-size:1.1rem;}
 
 
 
 #addBox{width: 100vw; 
 		height: 100%;
+		display:none;
 		background-color:#fff;
 		background-repeat:no-repeat;
 		position:relative;}
@@ -56,7 +58,7 @@ polygon:hover{stroke:rgba(255,255,255,0);}
 
 #content{width: 100vw; 
 		 height:200vw;
-		 background-image:url("../../svg/resume_pc.jpg");
+		 background-image:url("../../svg/contact360.jpg");
 		 background-repeat:no-repeat;
 		 background-size:100%;
 		 background-position:0 0;}

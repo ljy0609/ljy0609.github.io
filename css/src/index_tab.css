@@ -1,5 +1,5 @@
 
-@media screen and (min-width:960px) and (max-width:2560px) {
+@media screen and (min-width:640px) and (max-width:959px) {
 
 /* headBox */
 svg{position:fixed;top:50%;left:50%;margin-left:-300px;margin-top:-250px;transition:0.3s;width:1000px;height:1000px;}
@@ -14,10 +14,12 @@ polygon:hover{stroke:rgba(255,255,255,0.6);}
 			float:left;
 			margin-left:12.95833333vw;
 			color:rgba(255,255,255,0.6);}
+			
 #headBox>h2{width:auto;
 			height:2rem;
 			float:left;
-			margin-left:20.75vw;}
+			margin-left:16.75vw;
+			margin-top:1rem;}
 
 #headBox>h2>a{	display:block;
 				float:left;
@@ -30,7 +32,7 @@ polygon:hover{stroke:rgba(255,255,255,0.6);}
 #headBox>h2>a:nth-of-type(1){margin-left:0}
 #headBox>h2>a{margin-left:4.6875vw;transition:0.3s;}
 
-#headBox>h2>a:hover{font-size:1.4rem;}
+#headBox>h2>a:hover{font-size:1.4rem;font-weight:bold;}
 
 	#gnb{width:3rem; height: auto; position: fixed; top: 50%; right:2%; z-index: 1000;margin-top:-8rem;}
 	#gnb>ul{width: 100%; height: auto;}

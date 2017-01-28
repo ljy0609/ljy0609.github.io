@@ -1,0 +1,382 @@
+/* mousewheel.css */
+@media screen and (min-width:360px) and (max-width:639px) {
+body,html{width:100%;height:100%;overflow-x:hidden;}
+/* headBox */
+svg{position:absolute;transition:0.3s;}
+polygon:hover{stroke:rgba(255,255,255,0);}
+
+#headBox{width: 100vw; 
+		 height: 4rem;
+		 position:fixed;
+		 z-index:1000;
+		 position:top;
+		 padding-top:20px;
+		 padding-bottom:20px;
+		 background-color:#e6fff7;}
+
+#headBox>h1{color:#fff;
+			font-family:sans-serif;
+			font-weight:100;
+			font-size:1.2rem;
+			float:left;
+			margin-left:6.75vw;
+			color:#424242;}
+#headBox>nav{width:auto;
+			height:2rem;
+			float:left;
+			margin-left:6.75vw;
+			margin-top:1.2rem;}
+
+#headBox>nav>a{	display:block;
+				float:left;
+				color:#424242;
+				font-family:'Lato', sans-serif;
+				font-weight:100;
+				font-size:0.9rem;
+				cursor:pointer;}			
+
+#headBox>nav>a:nth-of-type(1){margin-left:0}
+#headBox>nav>a{margin-left:3.6875vw;transition:0.3s;}
+#headBox>nav>a:hover{font-size:1.1rem;font-weight:bold;}
+#headBox>nav>a:nth-of-type(2){font-weight:bold;font-size:1.1rem;transition:0.3s;}
+#headBox>nav>a:nth-of-type(2):hover{font-size:1.1rem;}
+
+	#gnb{width:3rem; 
+		 height: auto; 
+		 position: fixed; 
+		 top: 50%; 
+		 right:0.520833vw; 
+		 z-index: 1000;
+		 margin-top:-3rem;}
+	
+	#gnb>ul{width: 100%; height: auto;}
+	#gnb>ul>li{width: 100%; 
+			   height: 1rem; 
+			   margin-bottom:2rem; 
+			   position: relative;}
+
+	#gnb>ul>li:last-child{margin-bottom: 0;}
+	#gnb>ul>li i{width: 0.8rem;
+				 height: 0.8rem; 
+				 display: block;
+				 background-color:rgba(255,255,255,0.8); 
+				 border-radius:100%;
+				 border:1px solid #424242}
+
+	#gnb>ul>li span{
+		            display: block; 
+					width:0;  
+					padding:0; 
+					overflow: hidden;
+					border-radius:0.3rem;
+					position: absolute;	
+					right: 3.5rem; 
+					top:0;
+					color:#424242; 
+					font-weight:normal;
+					font-family:'Lato',sans-serif; 
+					transition:width;padding 0.5s;}
+
+		#gnb>ul>li:hover span{width: auto; padding:0.2rem 2rem;}
+
+
+
+
+#addBox{display:none;
+		width: 100vw; 
+		height: 100%;
+		background:linear-gradient(to bottom, #e6fff7, #fff);
+		background-repeat:no-repeat;
+		position:relative;}
+		svg.addBox_svg{top:50%;left:50%;margin-left:-300px;margin-top:-250px;transition:0.3s;width:1000px;height:600px;}
+		img.main_font{width:100%;height:105%;position:absolute;}
+
+/* content */
+
+#content_01{width: 100vw; 
+		 height:2680vw;
+		 background-image:url("../../svg/asan_mobile.jpg");
+		 background-repeat:no-repeat;
+		 background-size:100%;
+		 background-position:0 0;
+		 position:absolute;
+		 z-index:100;}
+
+#content_01>.original_box{width:100vw;
+					   height:258.7777778vw;
+					   background-color:rgba(125,125,125,0.5);
+					   margin-top:262.8888889vw;
+					   box-sizing:border-box;
+		 			   border-bottom:solid 3px #006769;}
+
+.original_text{float:left;
+			   font-size:9.444444vw;
+			   width:40vw;
+			   height:9.44444vw;
+			   background-color:#fa0;
+			   margin-left:20vw;
+			   margin-top:20vw;
+			   margin-bottom:15.5vw;}
+
+.original_left{float:left;
+			   font-size:9.44444vw;
+			   width:40vw;
+			   height:9.44444vw;
+			   margin-top:20vw;
+			   margin-bottom:15.5vw;
+			   background-color:#fa0;}
+
+.original_hide{width:100%;height:172.2222222vw;}
+
+.original_img{ display:none;
+			   float:left;
+			   width:100%;
+			   height:172.2222222vw;
+			   background-color:rgba(90,50,50,0.5);
+			   padding-top:22.7777778vw;
+			   box-sizing:border-box;
+			   background-position:center;
+			   background-size:100%;
+			   background-image:url("../../img/mobile/asan_mobile/renewal.jpg");}
+
+.button_box{
+			  width:100vw;
+			  margin-top:40vw;
+			  height:auto;}
+
+.button_box button{width:auto;
+				   height:auto;
+				   margin-top:6.66666667vw;
+	    		   padding:2.7777778vw 8.3333333vw;
+	    		   border:2px solid #006769;
+				   background-color:#fff;
+				   font-family:'Lato', sans-serif;
+				   transition:0.3s;
+				   float:left;}
+.button_box button:hover{transform:scale(1.05);}
+.button_box button:nth-of-type(1){margin-left:7vw;}
+.button_box button:nth-of-type(2){margin-right:7vw;float:right;}
+.button_box p{margin-left:7vw;padding-top:6.333333vw;color:#006769;font-family:'Lato',sans-serif;width:auto;height:auto;float:left;}
+
+/* concept_box */
+
+#content_01>.concept_box{width:100vw;
+					   height:232.7777778vw;
+					   background-color:rgba(200,200,200,0.5);
+					   box-sizing:border-box;
+		 			   border-bottom:solid 3px #006769;}
+
+.concept_text{ float:left;
+			   font-size:9.444444vw;
+			   width:40vw;
+			   height:auto;
+        	   background-color:#fa0;
+			   margin-left:20vw;
+			   margin-top:30vw;
+			   margin-bottom:18vw;}
+
+
+.concept_left{float:left;
+			   font-size:9.444444vw;
+			   width:40vw;
+			   margin-top:30vw;
+			   margin-bottom:18vw;
+			   background-color:#fa0;}
+.concept_hide{width:100%;height:172.333378vw;}
+.concept_img{display:none;
+			 float:left;
+			 width:100vw;
+			 height:172.3333378vw;
+			 background-color:rgba(178,255,30,0.5);
+			 border-bottom:solid 3px #006769;
+			 background-position:center;
+			 background-size:100%;
+			 background-image:url("../../img/mobile/asan_mobile/font.jpg");}
+}
+
+/* maincolor_box */
+
+#content_01>.maincolor_box{width:100vw;
+					    height:274.7777778vw;
+					    background-color:rgba(150,200,125,0.5);
+					    box-sizing:border-box;}
+
+.maincolor_text{font-size:9.444444vw;
+			   float:left;
+			   width:52vw;
+			   height:auto;
+			   background-color:#fa0;
+			   margin-left:20vw;
+			   margin-top:30vw;
+			   margin-bottom:14vw;}
+
+.maincolor_left{float:left;
+			   font-size:9.444444vw;
+			   width:28vw;
+			   margin-top:30vw;
+			   margin-bottom:14vw;
+			   background-color:#fa0;}
+
+
+.maincolor_hide{width:100%;height:219.333378vw;}
+.maincolor_img{display:none;
+			   float:left;
+			   width:100vw;
+			   height:219.3333378vw;
+			   background-color:rgba(127,89,130,0.5);
+		 	   border-bottom:solid 3px #006769;
+			   background-position:center;
+			   background-repeat:no-repeat;
+			   background-size:100%;
+			   background-image:url("../../img/mobile/asan_mobile/subcolor.jpg");}
+
+/* sketch_box */
+
+#content_01>.sketch_box{width:100vw;
+					 height:182.7777778vw;
+					 background-color:rgba(150,200,125,0.5);
+					 box-sizing:border-box;
+		 			 border-bottom:solid 3px #006769;}
+
+.sketch_text{font-size:9.444444vw;
+			 float:left;
+			 width:48vw;
+			 height:auto;
+			 background-color:#fa0;
+			 margin-left:20vw;
+			 margin-top:30vw;
+			 margin-bottom:26vw;}
+
+.sketch_left{  float:left;
+			   font-size:9.444444vw;
+			   width:32vw;
+			   margin-top:30vw;
+			   margin-bottom:26vw;
+			   background-color:#fa0;}
+
+
+.sketch_hide{width:100%;height:115.333378vw;}
+.sketch_img{display:none;
+			float:left;
+			width:100vw;
+		    height:115.3333378vw;
+		    background-color:rgba(194,78,36,0.5);
+		    background-repeat:no-repeat;
+			 background-position:center;
+			 background-size:100%;
+			 background-image:url("../../img/mobile/asan_mobile/asan_proto_01.jpg");}
+
+/* design_box */
+
+#content_01>.design_box{width:100vw;
+					 height:270.7777778vw;
+					 background-color:rgba(150,200,125,0.5);
+					 box-sizing:border-box;}
+
+.design_text{font-size:9.444444vw;
+			 width:100%;
+			 height:auto;
+			 background-color:#fa0;
+			 margin-left:20.666667vw;}
+
+.design_text >p{padding-top:30vw;font-size:9.44444vw;padding-bottom:25vw;}
+
+.design_img{width:100vw;height:204.3333378vw;background-color:rgba(99,48,59.0.5);
+	border-bottom:solid 3px #006769;}
+
+/* pc_box */
+
+#content_01>.pc_box{width:100vw;
+				 height:200.7777778vw;
+				 background-color:rgba(150,200,125,0.5);
+				 box-sizing:border-box;
+		 		 border-bottom:solid 3px #006769;}
+
+.pc_text{font-size:9.444444vw;
+		 width:100%;
+		 height:auto;
+		 background-color:#fa0;
+		 margin-left:20.666667vw;}
+
+.pc_text >p{padding-top:20vw;font-size:8.44444vw;}
+
+/* head_box */
+
+#content_01>.head_box{width:100vw;
+				   height:30.7777778vw;
+				   background-color:rgba(155,180,90,0.5);
+				   box-sizing:border-box;}
+
+.head_text{font-size:9.444444vw;
+		   width:100%;
+		   height:28vw;
+		   background-color:#fa0;}
+
+.head_text >p{padding-top:20vw;
+			  font-size:6.44444vw;float:left;background-color:#fa0;}
+.head_text >p:nth-of-type(1){margin-left:4vw;}
+.head_text >p:nth-of-type(2){font-size:3.66665vw;margin-top:2.33334vw;margin-left:3.3334vw;}
+.head_text >p:nth-of-type(3){font-size:3.66665vw;margin-top:2.33334vw;margin-left:3.3334vw;}
+.head_text >p:nth-of-type(4){font-size:3.66665vw;margin-top:2.33334vw;margin-left:3.3334vw;}
+.head_text >p:nth-of-type(5){font-size:3.66665vw;margin-top:2.33334vw;margin-left:3.3334vw;}
+
+.head_mainbox{width:100vw;
+			  height:70vw;
+			  background-color:rgba(88,213,255,0.5);
+			  background-position:center;
+			  background-repeat:no-repeat;
+			  background-size:100%;
+			  background-image:url("../../img/mobile/asan_mobile/mainbanner.jpg");}
+
+.head_textbox{width:100vw;height:26vw;background-color:rgba(28,255,87,0.5);}
+
+.head_codebox{width:100vw;
+			  height:236vw;
+			  background-color:rgba(120,50,255,0.5);
+			  border-bottom:solid 3px #006769;
+	 		  background-repeat:no-repeat;
+	 		  background-position:0 0;
+	 		  background-size:100%;
+	 		  background-image:url("../../img/mobile/asan_mobile/main.jpg");}
+/*.close */
+
+	button.close{width:3.125vw;
+		         height:3.125vw;
+		         position:fixed;
+		         top:0;right:0;
+		         margin-top:2.625rem;
+				 margin-right:4.3333333vw;
+				 transform:rotate(45deg);
+				 transition:all 0.3s;
+				 background-color:transparent;}
+
+	button.close::after{content:"";display:block;width:0.20833333333vw;height:3.125vw;background-color:#fff;
+						position:absolute;left:50%;top:0;z-index:500;margin-left:-0.104166666667vw;}
+
+	button.close::before{content:"";display:block;width:3.125vw;height:0.2083333333vw;background-color:#fff;
+						 position:absolute;top:50%;left:50%;margin-left:-1.5625vw;margin-top:-0.2083333333vw;}
+	button.close:hover{transform:rotate(90deg);}
+
+
+
+.cursor{cursor:pointer;}
+.block{display:block;}
+.font{color:#424242;
+	  font-size:;
+	  animation-name:font;
+	  animation-direction:alternate;
+	  animation-duration:1s;
+	  animation-timing-function:linear;
+	  animation-iteration-count:infinite;}
+.left_box{width:40vw;height:;}
+
+@keyframes font{
+	0%{}
+	25%{}
+	50%{color:rgba(6,118,121,0.5)}
+	75%{}
+	100%{color:rgba(6,118,121,0.5);margin-left:10px;}
+}
+
+#fnb{width: 100vw; height: 100%; background-color: #07e;}
+#footBox{width: 100vw; height: 100%; background-color: #a8c;}

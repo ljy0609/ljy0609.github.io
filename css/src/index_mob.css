@@ -1,5 +1,5 @@
 
-@media screen and (min-width:960px) and (max-width:2560px) {
+@media screen and (min-width:360px) and (max-width:639px) {
 
 /* headBox */
 svg{position:fixed;top:50%;left:50%;margin-left:-300px;margin-top:-250px;transition:0.3s;width:1000px;height:1000px;}
@@ -12,25 +12,26 @@ polygon:hover{stroke:rgba(255,255,255,0.6);}
 			font-weight:100;
 			font-size:1.2rem;
 			float:left;
-			margin-left:12.95833333vw;
+			margin-left:10.95833333vw;
 			color:rgba(255,255,255,0.6);}
 #headBox>h2{width:auto;
 			height:2rem;
 			float:left;
-			margin-left:20.75vw;}
+			margin-left:10.75vw;
+			margin-top:1.2rem;}
 
-#headBox>h2>a{	display:block;
-				float:left;
-				color:rgba(255,255,255,0.6);
-				font-family:'Lato', sans-serif;
-				font-weight:100;
-				font-size:1.2rem;
-				cursor:pointer;}		
+#headBox>h2>a{display:block;
+			  float:left;
+			  color:rgba(255,255,255,0.6);
+			  font-family:'Lato', sans-serif;
+			  font-weight:100;
+			  font-size:0.9rem;
+			  cursor:pointer;}		
 
 #headBox>h2>a:nth-of-type(1){margin-left:0}
 #headBox>h2>a{margin-left:4.6875vw;transition:0.3s;}
 
-#headBox>h2>a:hover{font-size:1.4rem;}
+#headBox>h2>a:hover{font-size:1.2rem;}
 
 	#gnb{width:3rem; height: auto; position: fixed; top: 50%; right:2%; z-index: 1000;margin-top:-8rem;}
 	#gnb>ul{width: 100%; height: auto;}
@@ -51,12 +52,12 @@ polygon:hover{stroke:rgba(255,255,255,0.6);}
 
 
 #addBox{width: 100vw; 
-		height: 100%;
+		height: 100vh;
 		background-color:#101010;
 		background-repeat:no-repeat;}
 
 
-		img{width:100%;height:105%;}
+		img{width:100%;height:100%;}
 
 #content{width: 100vw; height: 100%;}
 #info{width: 100vw; height: 100%; background-color: #cde;}

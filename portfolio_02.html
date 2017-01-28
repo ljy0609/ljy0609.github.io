@@ -6,13 +6,14 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes,initial-scale=1.0,maximum-scale=3.0,minimun-scale=1.0">
 	<link rel="apple-touch-icon" href="favicon.png" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+	
 	<link rel="stylesheet" href="./css/bin/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="./css/mainpage.css"> -->
+	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 	<!-- (>360)< 639 -->
-	<link rel="stylesheet" href="./css/src/mob.css"/>
+	<link rel="stylesheet" href="./css/src/portfolio_02_mob.css"/>
 	<!-- 640< -->
-	<link rel="stylesheet" href="./css/src/tab.css"/>
+<!-- 	<link rel="stylesheet" href="./css/src/portfolio_01_tab.css"/> -->
 	<!-- 960< -->
 	<link rel="stylesheet" href="./css/src/portfolio_02.css"/>
     
@@ -29,6 +30,7 @@
 	    <script src="ie/Respond/src/respond.js"></script>
 
     <![endif]-->
+
 	<title>Document</title>
 </head>
 <body>
@@ -36,20 +38,15 @@
 		<h1><a href="./index.html">Lee Jaeyoung</a></h1>
 		<nav>
 			<span class="hidden">title_menu</span>
-			<a href="./resume.html">Resume</a>
+			<a href="./resume.html">
+			Resume</a>
 			<a href="./portfolio_01.html">Portfolio_01</a>
 			<a href="#">Portfolio_02</a>
-			<a href="./contact.html">Contact</a>
+			<a href="./contact.html">
+			Contact</a>
 		</nav>
-	</header> 
-		<nav id="gnb">
-			<h2><span class="hidden">side menu</span></h2>
-			<ul>
-				<li><a href="#"><i></i><span>MAIN</span></a></li>
-				<li><a href="#content"><i></i><span>CONCEPT</span></a></li>
-				<li><a href="#resume"><i></i><span>RESUME</span></a></li>
-			</ul>
-		</nav>
+	</header>
+
 	<section id="addBox" class="wheel_area">
 
 			<svg class="addBox_svg">
@@ -58,12 +55,135 @@
 				<img src="./svg/main_black.svg" alt="" class="main_font">
 
 	</section>
-	<article id="content_01" class="wheel_area sky sky--is-raining js-object-sky">
+	
+	<article id="content_01" role="mob_size">
+	  <div class="original_box">
+	  
+	  	<div class="original_text cursor">
+				<p>ORIGINAL</p>
+	  	</div>
+	  	<div class="original_left">	
+		<i class="fa fa-angle-left font" aria-hidden="true"></i>
+		<i class="fa fa-angle-left font" aria-hidden="true"></i>
+		<i class="fa fa-angle-left font" aria-hidden="true"></i>
+	  	</div>
+
+	  	<div class="original_hide">	
+	  		<div class="original_img">
+	  		</div>
+	  	</div>
+	  	<div class="button_box">
+	  		
+	  		<button type="button">
+	  		<a href="http://intl.fender.com/en-KR/">
+	  		기존 사이트<br>바로가기</a>
+	  		</button>
+	  		
+	  		<button type="button">
+	  		<a href="../fender/index.html"">프로모션 사이트<br>바로가기
+	  		</a>
+	  		</button>
+	  		<p>
+	  		  ※기존 사이트는 pc에서만 가능합니다. 
+	  		</p>
+	  	</div>
+	  </div><!-- .orginal_box -->
+
+	  <div class="concept_box">
+	  	<div class="concept_text cursor">
+			<p>CONCEPT</p>
+	  	</div>
+	  	<div class="concept_left">	
+		<i class="fa fa-angle-left font" aria-hidden="true"></i>
+		<i class="fa fa-angle-left font" aria-hidden="true"></i>
+		<i class="fa fa-angle-left font" aria-hidden="true"></i>
+	  	</div>
+	  	<div class="concept_hide">	
+	  		<div class="concept_img">
+	  		</div>
+	  	</div>	  	
+	  </div>
+	  
+	  <div class="maincolor_box">
+	  	<div class="maincolor_text cursor">
+			<p>MAIN COLOR</p>
+	  	</div>
+	  	<div class="maincolor_left">	
+				<i class="fa fa-angle-left font" aria-hidden="true"></i>
+				<i class="fa fa-angle-left font" aria-hidden="true"></i>
+				<i class="fa fa-angle-left font" aria-hidden="true"></i>
+	  	</div>
+	  	<div class="maincolor_hide">		
+	  		<div class="maincolor_img">
+	  		</div>	  	
+	  	</div>
+	  </div>
+	  
+	  <div class="sketch_box">
+	  	<div class="sketch_text cursor">
+			<p>SKETCH</p>
+	  	</div>	
+	  	<div class="sketch_left">	
+				<i class="fa fa-angle-left font" aria-hidden="true"></i>
+				<i class="fa fa-angle-left font" aria-hidden="true"></i>
+				<i class="fa fa-angle-left font" aria-hidden="true"></i>
+	  	</div>
+	  	<div class="sketch_hide">	  	
+	  		<div class="sketch_img">
+	  		</div>
+	  	</div>	
+	  </div>
+	  
+	  <div class="design_box">
+	  	<div class="design_text">
+			<p>DESIGN</p>
+	  	</div>	  		
+	  </div>
+
+	  <div class="pc_box">
+	  	<div class="pc_text">
+			<p>PC</p>
+	  	</div>	  	
+	  </div>
+
+	  <div class="head_box">
+	  	<div class="head_text">
+			<p class="cursor">#headBox</p>
+			<p class="cursor">#banner</p>
+			<p class="cursor">#content  01~04</p>
+			<p class="cursor">#footer</p>
+	  	</div>
+	  	<div class="head_mainbox">
+	  		
+	  	</div>
+	  	<div class="head_textbox">
+	  		
+	  	</div>
+	  	<div class="head_codebox">
+	  		
+	  	</div>	  	
+	  </div>
+
 	</article>
-	<article id="content_02" class="wheel_area">
-		<h2><span class="hidden">콘텐츠박스</span></h2>
+	<article id="content_02" role="tab_size">
+	</article>
+	<article id="content_03" role="pc_size">
+		<div class="link_box">
+	  		<button type="button">
+	  		<a href="http://intl.fender.com/en-KR/">
+	  		기존 사이트<br>바로가기</a>
+	  		</button>
+	  		
+	  		<button type="button">
+	  		<a href="../fender/index.html"">프로모션 사이트<br>바로가기
+	  		</a>
+	  		</button>
+	  		</button>
+		</div>
 	</article>
 <!-- jQuery -->
-	<script src="./js/scroll_offset_01.js"></script>
+	<script src="./js/show_up.js">
+	</script>
+
 	<script src="./js/button.js"></script>
 </html>

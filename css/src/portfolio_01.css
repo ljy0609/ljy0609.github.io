@@ -81,7 +81,7 @@ polygon:hover{stroke:rgba(255,255,255,0);}
 				   animation-timing-function:linear;}
 .link_box button:hover{transform:scale(1.05);}
 .link_box button:nth-of-type(1){margin-right:35vw;}
-.link_box button:nth-of-type(2){}
+.link_box button a{display:block;width:inherit;height:inherit;line-height:1.5;}
 
 @keyframes pc_line{
 	0%{}

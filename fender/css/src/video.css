@@ -4,37 +4,91 @@
 
 body{overflow-x: hidden;background-color: #101010; background-image: url(../../img/bg_video_03.png); background-repeat: no-repeat;background-size: cover;transition:all 1s}
 
+/*-----------------*/
 h1{display:none;}
 #menu{display:none;}
 #videoBox{ width: 100vw;height: 50vh;display:none;}
 
 /*btn-----------------*/
 .btnBox{display: none}
-.btn{width: auto;height:auto;background-color:transparent;position:absolute; 
-	 top: 55%; margin-top: 2.5rem;z-index:5000}
-.btn>button{width:100%;height:100%;font-size:4rem;font-weight:bold;
-		    background-color:transparent; color:rgba(255,255,255,0.5);}
+.btn{width: auto;
+	 height:auto;	
+	 background-color:transparent; 
+	 position: absolute; 
+	 top: 55%; 
+	 margin-top: 2.5rem;
+	 z-index:5000}
+
+.btn>button{width: 100%; 
+			height: 100%; 
+			font-size:4rem; 
+			font-weight: bold;
+			background-color:transparent; 
+			color:rgba(255,255,255,0.5);}
 .leftBtn{left:0;}
 .rightBtn{right:0;}
-#videoBox ul{width: 80vw;height: 100%;position:relative;overflow:hidden;
-			 margin: 0 auto;margin-top: 0vw;}
-#videoBox ul li{height:auto;top:50%;position:absolute;text-align:center;
-			    background-repeat: no-repeat;transition:all 0.4s}
-#videoBox li::after{content: " ";display:block;width:100%;height:100%;position:absolute;
-					background-color: rgba(0,0,0,0.8); transition:all 0.2s; z-index: 350; 
-					top:0;left:0;transition-timing-function: linear}
-#videoBox li span{color: #fff;position:absolute;z-index: 5000;
-				  font-size: 3rem;font-weight: bold;display: none;}
+
+/*video---------------*/
+#videoBox ul{width: 80vw;
+			height: 100%;
+			position: relative; 
+			overflow:hidden;
+			margin: 0 auto;
+			margin-top: 0vw;}
+
+#videoBox ul li{
+				height: auto;
+				top: 50%;
+				position: absolute;
+				text-align: center;
+				background-repeat: no-repeat;
+				transition:all 0.4s}
+
+
+#videoBox li::after{content: " ";
+					display: block; 
+					width: 100%;
+					height: 100%;
+					position:absolute;
+					background-color: rgba(0,0,0,0.8); 
+					transition:all 0.2s; 
+					z-index: 350; 
+					top:0;
+					left:0;
+					transition-timing-function: linear}
+
+
+#videoBox li span{color: #fff;
+				  position: absolute;
+				  z-index: 5000;
+				  font-size: 3rem;
+				  font-weight: bold;
+				  display: none;}
 
 #videoBox li img{height: auto;}
-#videoBox li:nth-child(1){width: 26.0416vw;left: 10%; z-index:100;margin-top:-9%}
+
+
+#videoBox li:nth-child(1){width: 26.0416vw;
+						  left: 10%; 
+						  z-index:100;
+						  margin-top:-9%}
+
 #videoBox li:nth-child(1) img{width: 100%;}
+
 #videoBox li:nth-child(2){width: 31.25vw;left: 0; z-index:200;margin-top:-11%}
 #videoBox li:nth-child(2) img{width: 100%;}
+
 #videoBox li:nth-child(3){width: 36.4583vw;left: 10%; z-index:300;margin-top:-13%;}
 #videoBox li:nth-child(3) img{width: 100%;}
-#videoBox li:nth-child(4){display: block; width: 46.6666vw;left:50%; z-index:400;
-						  margin-left: -23.3333vw;margin-top:-16%}
+
+
+#videoBox li:nth-child(4){display: block; 
+						  width: 46.6666vw;
+						  left:50%; 
+						  z-index:400;
+						  margin-left: -23.3333vw;
+						  margin-top:-16%}
+
 #videoBox li:nth-child(4) img{width: 100%;}
 #videoBox li:nth-child(4) iframe{width:100%;
 								 height:100%;
@@ -75,16 +129,14 @@ h1{display:none;}
 
 
 /*videoBtn----------------*/
-
 .play{width: 6rem;
-	　height:6rem;
+	  height:6rem;
 	  position: absolute;
-	　z-index: 500; 
-	　top: 50%;
-	　left: 50%; 
-	　margin-top: -3rem;
-	　margin-left: -3rem;}
-
+	  z-index: 500; 
+	  top: 50%;
+	  left: 50%; 
+	  margin-top: -3rem;
+	  margin-left: -3rem;}
 .play button{width: 100%;
 			 height: 100%;
 			 font-size: 5rem;

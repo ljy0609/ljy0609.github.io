@@ -7,7 +7,7 @@ var about_tit = $('#aboutBox').find('#aboutTitleBox').delay(1500).fadeIn(500);
 var about_txt = $('#aboutBox').find('#aboutTextBox').delay(2000).fadeIn(1500);
 var about_btn = $('#aboutBox').find('button').delay(2500).fadeIn(1500);
 
-	// 링크연결 aboutus
+// 링크연결 aboutus
 	$('.mnbTextBox').find('li').on('click',function(e){
 		var index = $(this).index();
 		console.log(index);

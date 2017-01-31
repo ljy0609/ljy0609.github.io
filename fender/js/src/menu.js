@@ -7,6 +7,7 @@ $(function(){
 		$('#mnb').fadeIn(500);
 		(function() {
 		var mnb = $('#mnb').css('display');
+		if(mnb == 'block'){
 			var logo = $('.mnbLogo');
 			var red = $('.mnbLogo').offset().top;
 			var home = $('.mnbTextUl>li:nth-of-type(1)').offset().top;
@@ -21,13 +22,19 @@ $(function(){
 			var minus_02 = video - home;
 			var minus_03 = about - home;
 			var minus_04 = contact - home;
-		
-		if(mnb == 'block'){
+			// console.log(video);
+			// console.log(home);
+
+
 			$('.mnbHome').on('mouseenter',function(){
 			logo.stop().animate({marginTop:minus_00},500);
+
+
 			});
 			$('.mnbProduct').on('mouseenter',function(){
 			logo.stop().animate({marginTop:minus_01 +'px'},500);
+
+
 			});
 			$('.mnbVideo').on('mouseenter',function(){
 			logo.stop().animate({marginTop:minus_02 +'px'},500);

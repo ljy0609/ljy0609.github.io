@@ -15,8 +15,8 @@
     electext.find('div').mouseover(function(){
         
     
-        $(this).prev().stop().animate({marginLeft:'0%'},600,function(){
-            $(this).animate({marginLeft:'50%',backgroundColor:'#c20c0c',color:"#fff"},400);
+        $(this).prev().stop().animate({marginLeft:'0%'},400,function(){
+            $(this).animate({marginLeft:'50%',backgroundColor:'#c20c0c',color:"#fff"},200);
             
             var li_num = electext.find('span').index(this);
             console.log(li_num);
@@ -37,8 +37,8 @@
     
     electext.find('div').mouseout(function(){
         
-        $(this).prev().stop().animate({marginLeft:'0%',backgroundColor:'#fff',color:'#111'},800,function(){
-            $(this).animate({marginLeft:'50%'},600);
+        $(this).prev().stop().animate({marginLeft:'0%',backgroundColor:'#fff',color:'#111'},400,function(){
+            $(this).animate({marginLeft:'50%'},300);
            
             
             var li_num = electext.find('span').index(this);

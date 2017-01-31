@@ -1,5 +1,3 @@
-
-
 $(function(){
     
     var bodytext = $('#bodyBox .bodyText');
@@ -16,8 +14,8 @@ $(function(){
     bodytext.find('div').mouseover(function(){
         
     
-        $(this).prev().stop().animate({marginLeft:'0%'},600,'linear',function(){
-            $(this).animate({marginLeft:'50%',backgroundColor:'#c20c0c',color:"#fff"},400,'linear');
+        $(this).prev().stop().animate({marginLeft:'0%'},400,'linear',function(){
+            $(this).animate({marginLeft:'50%',backgroundColor:'#c20c0c',color:"#fff"},200,'linear');
             
             var li_num = bodytext.find('span').index(this);
             console.log(li_num);
@@ -36,8 +34,8 @@ $(function(){
     
     bodytext.find('div').mouseout(function(){
         
-        $(this).prev().stop().animate({marginLeft:'0%',backgroundColor:'#fff',color:'#111'},800,'linear',function(){
-            $(this).animate({marginLeft:'50%'},600,'linear');
+        $(this).prev().stop().animate({marginLeft:'0%',backgroundColor:'#fff',color:'#111'},400,'linear',function(){
+            $(this).animate({marginLeft:'50%'},200,'linear');
            
             
             var li_num = bodytext.find('span').index(this);

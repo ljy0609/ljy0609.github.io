@@ -33,24 +33,24 @@
 				<span class="hidden">main</span>
 				</a>
 			</h1>
-			<div id="menu">
+			<button type="button" id="menu">
 				<ul class="menuSmall_01">
-					<li></li>
-					<li></li>
+				<li></li>
+				<li></li>
 				</ul>
 				<ul class="menuSmall_02">
-					<li></li>
-					<li></li>
+				<li></li>
+				<li></li>
 				</ul>
 				<ul class="menuSmall_03">
-					<li></li>
-					<li></li>
+				<li></li>
+				<li></li>
 				</ul>
 				<ul class="menuSmall_04">
-					<li></li>
-					<li></li>
+				<li></li>
+				<li></li>
 				</ul>
-			</div>
+			</button>
 		</header>
 	
 	<div id="mnb">
@@ -99,12 +99,10 @@
 	
 
 	<!-- article area -->
-	
-	<div id="windowBox">
+		<div id="windowBox">
 		<div id="articleBox">
 		<article id="mainBox" class="wheel_area">
 			<h2 id="mainTitleBox" class="hide">
-			<span class="hidden">메인타이틀박스</span>
 			</h2>
 			<div id="mainColorBox" class="hide">
 				<div class="red"></div>
@@ -114,20 +112,21 @@
 			</div>
 		</article><!-- mainBox -->
 		
-		<article id="bodyBox" class="wheel_area">
-			<h2 class="hidden">바디박스</h2>
-			<div class="bodyBox">
-          		<div class="bodyName hide"></div>
-          		<div class="bodyText">
-              	<ul class="hide">
-                 	 <li class="li"><span class="span">Body shape</span><div></div></li>
-                 	 <li class="li"><span class="span">Body material</span><div></div></li>
-                  	<li class="li"><span class="span">Body finish</span><div></div></li>
-              	</ul>
-          	</div>
-       	</div>
-		</article>
+<article id="bodyBox" class="wheel_area">
 
+		<div class="bodyBox">
+          	<div class="bodyName hide"></div>
+          	<div class="bodyText">
+              <ul class="hide">
+                  <li class="li"><span class="span">Body shape</span><div></div></li>
+                  <li class="li"><span class="span">Body material</span><div></div></li>
+                  <li class="li"><span class="span">Body finish</span><div></div></li>
+              </ul>
+          </div>
+       		
+       	</div>
+</article>
+		
 		<article id="neckBox">
 			<h2 id="neckTitleBox" class="hide">
 				<span class="hidden">neck</span>
@@ -162,7 +161,6 @@
 		</article> 
 		
 		<article id="elecBox">
-		 <h2 class="hidden">일렉트로닉박스></h2>
          <div class="elecBox">
                 <div class="elecName hide">
                   
@@ -193,36 +191,31 @@
 
 		
 		<article id="hardBox">
-		<h2 class="hidden">하드웨어박스</h2>
 		<div id="hardwareBox" class="wheel_area">
 		</div>
 		
 			<div id="hardTextBox">
-			  <div>
-			  	<img src="./img/bridge.png" alt="브릿지">
-			  	<span>Bridge</span>
-			  	<p>6-Saddie Standard Strings</p>
-			  </div>
-			  <div>
-			  	<img src="./img/tuning.png" alt="터닝">
-			  	<span>Tuning Machines</span>
-			  	<p>Standard Cast/Sealed</p>
-			  </div>
-			  <div>
-			  	<img src="./img/orientation.png" alt="오리엔테이션">
-			  	<span>Orientation</span>
-			  	<p>Left-Hand</p>
-			  </div>
-			  <div>
-			    <img src="./img/pickguard.png" alt="픽가드">
-			  	<span>Pickguard</span>
-			  	<p>3-Play Parchment</p>
-			  </div>
-			  <div>
-			    <img src="./img/knobs.png" alt="눕스">
-			  	<span>Control Knobs</span>
-			  	<p>Knurled Flat-Top</p>
-			  </div>
+			  <dl>
+			  	<img src="./img/bridge.png" alt="">
+			  	<dt>Bridge</dt>
+			  	<dd>6-Saddie Standard Strings</dd>
+			  </dl>
+			  <dl><img src="./img/tuning.png" alt="">
+			  	<dt>Tuning Machines</dt>
+			  	<dd>Standard Cast/Sealed</dd>
+			  </dl>
+			  <dl><img src="./img/orientation.png" alt="">
+			  	<dt>Orientation</dt>
+			  	<dd>Left-Hand</dd>
+			  </dl>
+			  <dl><img src="./img/pickguard.png" alt="">
+			  	<dt>Pickguard</dt>
+			  	<dd>3-Play Parchment</dd>
+			  </dl>
+			  <dl><img src="./img/knobs.png" alt="">
+			  	<dt>Control Knobs</dt>
+			  	<dd>Knurled Flat-Top</dd>
+			  </dl>
 			</div>
 		</article>
 
@@ -235,13 +228,13 @@
 	
 	<script src="./js/src/menu.js"></script>
 	<script src="./js/src/neck.js"></script>
-	<script src="./js/src/scroll_page.js"></script>
+	<script src="./js/src/scroll_page_01.js"></script>
 	<script src="./js/src/pagexy_01.js"></script>
 	<script src="./js/src/body.js"></script>
 	<script src="./js/src/show_up.js"></script>
 	<script src="./js/src/elec.js"></script>
 <!-- 	<script src="./js/src/hardware.js"></script> -->
-<!--     <script src="./js/src/mousewheel_01.js"></script> -->
+    <script src="./js/src/mousewheel_01.js"></script>
 </body>
 
 </html>

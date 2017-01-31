@@ -66,6 +66,8 @@ left.on('click',function() {
     vbox.find('.videoTitle').find('span').text(video_list[box_4_num].text);
    
 });
+
+	
 right.on('click',function() {
 	
     box_ul.find('li:first').appendTo(box_ul);
@@ -100,30 +102,42 @@ nav.find('li').on('click',function(){
    
        
 });
-
-   function move_left(x,y){
-    for(x;x<y;x++){ 
-        box_ul.find('li:first').appendTo(box_ul).animate(300);
-	    nav.children('li:last').prependTo(nav);
-        box_ul.find('iframe').remove();
+   
+    function move_left(x,y){
+    for(x;x<y;x++){
+		  
+            box_ul.find('li:first').appendTo(box_ul).animate(300);
+	        nav.children('li:last').prependTo(nav);
+    
+	        box_ul.find('iframe').remove();
         var box_4_class_name = box_ul.find('li:nth-child(4)').attr('class');
-        var box_4_num = parseInt(box_4_class_name.slice(7,8));
+   
+     var box_4_num = parseInt(box_4_class_name.slice(7,8));
+       
+        
         $('body').css({backgroundImage:"url(" + video_list[box_4_num].img +")"});
          vbox.find('.videoTitle').find('span').text(video_list[box_4_num].text);
-		 } 
-	}    
-    function move_right(x,y){
-    for(x;x>y;x--){            
-		box_ul.find('li:last').prependTo(box_ul).animate(300);
-	    nav.children('li:first').appendTo(nav);
-	    box_ul.find('iframe').remove();
-        var box_4_class_name = box_ul.find('li:nth-child(4)').attr('class');
-        var box_4_num = parseInt(box_4_class_name.slice(7,8));
-        $('body').css({backgroundImage:"url(" + video_list[box_4_num].img +")"});
-        vbox.find('.videoTitle').find('span').text(video_list[box_4_num].text);	
-        } 
+		 }
+    
 	}
     
+    function move_right(x,y){
+    for(x;x>y;x--){
+            
+		box_ul.find('li:last').prependTo(box_ul).animate(300);
+	       nav.children('li:first').appendTo(nav);
+	
+	
+	       box_ul.find('iframe').remove();
+        var box_4_class_name = box_ul.find('li:nth-child(4)').attr('class');
+       
+     var box_4_num = parseInt(box_4_class_name.slice(7,8));
+   
+        $('body').css({backgroundImage:"url(" + video_list[box_4_num].img +")"});
+    vbox.find('.videoTitle').find('span').text(video_list[box_4_num].text);	}
+   
+    
+	}
 // playVideo.js	
 	
 	
